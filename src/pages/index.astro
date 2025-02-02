@@ -1,16 +1,41 @@
 ---
-
+import "../styles/global.css";
+import poster from "../assets/background-poster.jpg";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Fictive Flame Media</title>
+    </head>
+    <body class="bg-gray-950">
+        <div class="relative h-screen w-screen overflow-hidden">
+            <video
+                autoplay
+                loop
+                muted
+                poster={poster.src}
+                class="absolute z-10 inset-0 h-full w-full object-cover"
+            >
+                <source src="/background-hd.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="py-2 max-w-2xl mx-auto text-gray-50 font-humanist my-8">
+            <h1 class="text-6xl text-center font-bold">Fictive Flame</h1>
+            <p class="text-center mt-2">
+                Denver, Colorado-based full-service media production.
+            </p>
+            <p class="text-center my-4">
+                <a
+                    class="block p-4 outline-solid outline-gray-100 rounded"
+                    data-umami-event="Contact Link"
+                    href="mailto:contact@fictiveflame.co">Contact</a
+                >
+            </p>
+        </div>
+    </body>
 </html>
