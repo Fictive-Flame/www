@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
         loop
         muted
         playsinline
-        class="relative inset-0 h-8/10 w-full object-cover"
+        class="h-8/10 w-full object-cover"
     >
         <source
             src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
@@ -20,14 +20,14 @@ import Footer from "../components/Footer.astro";
         Your browser does not support the video tag.
     </video>
     <Container>
-        <div class="flex mt-6 font-neogrote lg:flex-row sm:flex-col">
-            <div>
+        <div class="flex -mt-6 relative font-neogrote lg:flex-row sm:flex-col bg-gray-900 p-8 text-gray-200 rounded-2xl shadow-lg shadow-gray-900">
+            <div class="sm:mb-6">
                 <h2 class="text-4xl mb-6 font-bold">Featured Work</h2>
                 <p class="text-wrap">
                     In today's world, stories are currency. From the first words though to the finished product, we can help you make an impact.
                 </p>
             </div>
-            <div class="lg:px-6">
+            <div class="lg:px-6 sm:mb-6">
                 <h2 class="text-4xl mb-6 font-bold">Capabilities</h2>
                 <p class="text-wrap">Some may say art and science don't mix, but we can't see it any other way. Your project needs both, so why change now?</p>
             </div>
