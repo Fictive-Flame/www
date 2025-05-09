@@ -1,16 +1,21 @@
-<nav class="bg-gray-900">
-    <div class="flex container">
-        <div class="text-2xl text-gray-800">Fictive Flame</div>
+---
+const classes = Astro.props.classes || [];
+---
+<nav x-data="{ open: false }" class:list={["w-screen", "font-humanist", "font-bold", "text-gray-200", ...classes]}>
+    <div class="flex container mx-auto justify-between px-2">
+        <div class="text-2xl text-gray-100 py-6 font-bold uppercase">Fictive Flame</div>
+        <button
+            @click="open = true"
+            class="text-gray-200 hover:text-gray-400 transition hover:scale-105 cursor-pointer"
+        >
+            <svg width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3.32001H16C14.8954 3.32001 14 4.21544 14 5.32001V8.32001C14 9.42458 14.8954 10.32 16 10.32H19C20.1046 10.32 21 9.42458 21 8.32001V5.32001C21 4.21544 20.1046 3.32001 19 3.32001Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 3.32001H5C3.89543 3.32001 3 4.21544 3 5.32001V8.32001C3 9.42458 3.89543 10.32 5 10.32H8C9.10457 10.32 10 9.42458 10 8.32001V5.32001C10 4.21544 9.10457 3.32001 8 3.32001Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 14.32H16C14.8954 14.32 14 15.2154 14 16.32V19.32C14 20.4246 14.8954 21.32 16 21.32H19C20.1046 21.32 21 20.4246 21 19.32V16.32C21 15.2154 20.1046 14.32 19 14.32Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 14.32H5C3.89543 14.32 3 15.2154 3 16.32V19.32C3 20.4246 3.89543 21.32 5 21.32H8C9.10457 21.32 10 20.4246 10 19.32V16.32C10 15.2154 9.10457 14.32 8 14.32Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
     </div>
-</nav>
-
-<div x-data="{ open: false }" class="p-6 font-humanist font-bold text-gray-200">
-    <button
-        @click="open = true"
-        class="px-6 py-3 bg-gray-800 text-gray-200 hover:text-gray-400 rounded-full shadow-lg transition hover:scale-105"
-    >
-        Test
-    </button>
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-500"
@@ -27,4 +32,4 @@
         <a href="/work" class="text-4xl hover:text-gray-400 transition duration-300">Services</a>
         <a href="/contact" class="text-4xl hover:text-gray-400 transition duration-300">Contact</a>
     </div>
-</div>
+</nav>
