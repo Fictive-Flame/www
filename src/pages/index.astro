@@ -1,54 +1,30 @@
 ---
 import Layout from "../components/Layout.astro";
+import Container from "../components/Container.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 ---
-<Layout primary>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <meta name="og:image" content={poster.src} />
-        <script
-            defer
-            src="https://cloud.umami.is/script.js"
-            data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
-        <title>Fictive Flame Media</title>
-    </head>
-    <body class="bg-gray-950">
-        <div class="relative h-screen w-screen overflow-hidden">
-            <div
-                class="absolute w-screen h-96 bottom-0 z-12 bg-gradient-to-b from-gray-950/0 to-gray-950/100"
-            >
-            </div>
-            <video
-                autoplay
-                loop
-                muted
-                playsinline
-                poster={poster.src}
-                class="absolute z-10 inset-0 h-full w-full object-cover"
-            >
-                <source
-                    src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
+<Layout>
+    <Nav/>
+    <Container>
+        <div class="flex">
+            <div>
+                <h2>Featured Work</h2
+                    <p>
+                        In today's world, stories are currency. From the first words though to the finished product, we can help you make an impact.
+                    </p>
+                </div>
+        <div>
+            <h2>Capabilities</h2>
+            <p>Some may say art and science don't mix, but we can't see it any other way. Your project needs both, so why change now?</p>
         </div>
-        <div class="py-2 max-w-x2l mx-auto text-gray-50 font-humanist my-8">
-            <h1 class="text-6xl text-center font-bold">Fictive Flame</h1>
-            <p class="text-center mt-2">
-                Denver, Colorado-based full-service media production.
-            </p>
-            <p class="text-center my-4 mx-auto max-w-sm">
-                <a
-                    class="block p-4 outline-solid outline-gray-100 rounded"
-                    data-umami-event="Contact Link"
-                    href="mailto:contact@fictiveflame.co">Contact</a
-                >
+        <div>
+            <h2>Get In Touch</h2>
+            <p>
+                If you have an idea that's out of the ordinary, we want to hear it. Pitch your idea to a team who can see the future of storytelling.
             </p>
         </div>
-    </body>
-</html>
+        </div>
+    </Container>
+    <Footer/>
+</Layout>

@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import poster from "../assets/background-poster.jpg";
-import Nav from "./Nav.astro";
 ---
 
 <html lang="en">
@@ -18,8 +17,7 @@ import Nav from "./Nav.astro";
             data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
         <title>Fictive Flame Media</title>
     </head>
-    <body class="bg-gray-100 dark:bg-gray-800">
-        <Nav {...Astro.props}/>
+    <body class:list={["bg-gray-100"]}>
         <slot/>
     </body>
 </html>

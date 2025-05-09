@@ -1,6 +1,17 @@
 ---
+import { getCollection } from "astro:content";
+import { basename } from "path";
 import Layout from "../../components/Layout.astro";
-const { title } = Astro.props;
+
+export async function getStaticPaths() {
+  const work = await getCollection("work");
+  return work.map(w => ({
+    params: { slug: basename(w.id) },
+    props: w,
+  }))
+}
+
+const { data: { title } } = Astro.props;
 ---
 <Layout primary>
     <div class="max-w-xl mx-auto">
