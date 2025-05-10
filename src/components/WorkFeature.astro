@@ -1,6 +1,7 @@
 ---
+const { data: { title, preview }} = Astro.props;
 ---
-<div class="overflow-hidden relative w-1/2 h-96 m-4 bg-gray-300">
+<div class="overflow-hidden relative h-96 rounded-2xl">
     <video
         autoplay
         loop
@@ -8,9 +9,8 @@
         playsinline
         class="absolute inset-0 h-full w-full object-cover"
     >
-        <source
-            src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
-            type="video/mp4"
-        />
+        {preview.map(p => (
+          <source src={p.src} type={p.type} />
+        ))}
     </video>
 </div>
