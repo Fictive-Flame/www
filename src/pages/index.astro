@@ -5,15 +5,18 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 ---
 <Layout>
-    <div class="h-screen w-screen">
+    <div class="relative h-screen w-screen overflow-hidden">
         <Nav classes={["z-40", "absolute"]}/>
-        <div class="absolute w-screen h-1/4 bottom-0 z-12 bg-gradient-to-b from-gray-950/0 to-gray-950/100"></div>
+        <div
+            class="absolute w-screen h-96 bottom-0 z-12 bg-gradient-to-b from-gray-950/0 to-gray-950/100"
+        >
+        </div>
         <video
             autoplay
             loop
             muted
             playsinline
-            class="h-full w-full object-cover"
+            class="absolute z-10 inset-0 h-full w-full object-cover"
         >
             <source
                 src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
