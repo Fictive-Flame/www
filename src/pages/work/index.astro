@@ -2,6 +2,7 @@
 import Layout from "../../components/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Container from "../../components/Container.astro";
+import Footer from "../../components/Footer.astro";
 import WorkFeature from "../../components/WorkFeature.astro";
 import { getWork } from "../../utils/data";
 
@@ -18,4 +19,5 @@ const work = await getWork();
     <div class="container mx-auto grid mt-12 px-2 lg:grid-cols-2 lg:mb-6 lg:gap-8">
         {work.map(w => (<WorkFeature {...w}/>))}
     </div>
+    <Footer/>
 </Layout>

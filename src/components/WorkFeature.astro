@@ -2,8 +2,8 @@
 import { slugify } from "../utils/data";
 const { data: { title, categories, preview } } = Astro.props;
 ---
-<div class="overflow-hidden relative h-96">
-    <div class="absolute w-full h-full flex z-12 p-4">
+<div class="overflow-hidden relative h-96 rounded-2xl sm:mt-12">
+    <div class="absolute flex w-full h-full items-end z-12 p-4">
         <div>
             <a href=`/work/${slugify(title)}`>
                 <h2 class="text-2xl text-gray-300 font-bold">
