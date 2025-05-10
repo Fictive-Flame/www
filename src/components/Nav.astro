@@ -1,11 +1,23 @@
 ---
 const classes = Astro.props.classes || [];
 ---
-<nav x-data="{ open: false }" class:list={["w-screen", "font-humanist", "font-bold", "text-gray-200", ...classes]}>
+<nav x-data="{
+    open: false,
+    lockScroll() {
+      document.body.classList.add('overflow-hidden');
+    },
+    unlockScroll() {
+      document.body.classList.remove('overflow-hidden');
+    },
+    toggleMenu(state) {
+      this.open = state;
+      state ? this.lockScroll() : this.unlockScroll();
+    }
+}" class:list={["w-screen", "font-humanist", "font-bold", "text-gray-200", ...classes]}>
     <div class="flex container mx-auto justify-between px-2">
         <div class="text-2xl text-gray-100 py-6 font-bold uppercase">Fictive Flame</div>
         <button
-            @click="open = true"
+            @click="toggleMenu(true)"
             class="text-gray-200 hover:text-gray-400 transition hover:scale-105 cursor-pointer"
         >
             <svg width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +38,7 @@ const classes = Astro.props.classes || [];
         x-transition:leave-end="opacity-0 scale-95"
         class="fixed inset-0 z-50 bg-gray-950 text-gray-200 flex flex-col items-center justify-center space-y-8 font-humanist font-bold uppercase overflow-hidden"
     >
-        <button @click="open = false" class="absolute top-6 right-6 text-3xl hover:text-gray-400 cursor-pointer">✕</button>
+        <button @click="toggleMenu(false)" class="absolute top-6 right-6 text-3xl hover:text-gray-400 cursor-pointer">✕</button>
         <a href="/" class="text-6xl hover:text-gray-400 transition duration-300">Home</a>
         <a href="/work" class="text-6xl hover:text-gray-400 transition duration-300">Work</a>
         <a href="/about" class="text-6xl hover:text-gray-400 transition duration-300">Services</a>
