@@ -5,23 +5,25 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 ---
 <Layout>
-    <Nav classes={["z-40", "absolute"]}/>
-    <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="h-8/10 w-full object-cover"
-    >
-        <source
-            src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
-            type="video/mp4"
-        />
-        Your browser does not support the video tag.
-    </video>
+    <div class="h-screen w-screen">
+        <Nav classes={["z-40", "absolute"]}/>
+        <div class="absolute w-screen h-1/4 bottom-0 z-12 bg-gradient-to-b from-gray-950/0 to-gray-950/100"></div>
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="h-full w-full object-cover"
+        >
+            <source
+                src="https://storage.fictiveflame.co/background-hd-portfolio.mp4"
+                type="video/mp4"
+            />
+            Your browser does not support the video tag.
+        </video>
     </div>
     <Container>
-        <div class="flex -mt-6 relative font-neogrote lg:flex-row sm:flex-col bg-gray-900 p-8 text-gray-200 rounded-2xl shadow-lg shadow-gray-900">
+        <div class="-mt-12 z-20 flex relative font-neogrote text-gray-200 py-2">
             <div class="sm:mb-6">
                 <h2 class="text-4xl mb-6 font-bold">Featured Work</h2>
                 <p class="text-wrap">
