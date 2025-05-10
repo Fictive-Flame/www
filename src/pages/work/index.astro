@@ -2,6 +2,10 @@
 import Layout from "../../components/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Container from "../../components/Container.astro";
+import WorkFeature from "../../components/WorkFeature.astro";
+import { getWork } from "../../utils/data";
+
+const work = await getWork();
 ---
 <Layout primary>
     <Nav classes={["z-40"]}/>
@@ -9,6 +13,9 @@ import Container from "../../components/Container.astro";
         <div class="p-2 mt-12">
             <h1 class="text-gray-300 text-6xl lg:text-7xl font-bold mb-8">Work</h1>
             <p class="text-gray-300 text-xl">From pre-production to the final cut, we're here to help explain what's awesome about you and your project.</p>
+        </div>
+        <div class="p-2 flex">
+            {work.map(w => (<WorkFeature {...w}/>))}
         </div>
     </Container>
 </Layout>
