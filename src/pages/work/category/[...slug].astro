@@ -1,0 +1,8 @@
+---
+import { getWork } from "../../../utils/data";
+
+export async function getStaticPaths() {
+  const work = await getWork();
+  return [{ params: { slug: 'category' }, props: {} }]
+}
+---
