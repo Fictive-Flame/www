@@ -5,12 +5,10 @@ const { data: { title, categories, preview } } = Astro.props;
 <div class="overflow-hidden mt-12 relative h-96 rounded-2xl">
     <div class="absolute flex w-full h-full items-end z-12 p-4">
         <div>
-            <a href=`/work/${slugify(title)}`>
                 <h2 class="text-2xl text-gray-300 font-bold">
                     <span class="absolute h-full w-full inset-0"></span>
                     {title}
                 </h2>
-            </a>
             <ul class="flex flex-wrap items-center mt-4 text-gray-100 text-sm">
                 {categories.map(c => (
                     <li class="bg-gray-700 backdrop-opacity-40 rounded-2xl me-2">

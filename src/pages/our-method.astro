@@ -2,6 +2,7 @@
 import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Container from "../components/Container.astro";
+import ServiceList from "../components/ServiceList.astro";
 ---
 <Layout primary>
     <Nav classes={["z-40"]}/>
@@ -10,5 +11,6 @@ import Container from "../components/Container.astro";
             <h1 class="text-gray-300 text-6xl lg:text-7xl font-bold mb-8">Our Method</h1>
             <p class="text-gray-300 text-xl">Whether we're planning an event, crafting a film or photo shoot, or coding interactive art, we start with the kernel of it all: you.</p>
         </div>
+        <ServiceList/>
     </Container>
 </Layout>
