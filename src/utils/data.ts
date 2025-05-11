@@ -4,6 +4,13 @@ export async function getWork() {
   return await getCollection("work");
 }
 
+export async function getWorkByCategory(category: string) {
+  const work = await getWork();
+  return work.filter(({ data: { categories } }) =>
+    categories.includes(category),
+  );
+}
+
 export function slugify(input: string) {
   input = input.replace(/^\s+|\s+$/g, "");
   input = input.toLowerCase();
