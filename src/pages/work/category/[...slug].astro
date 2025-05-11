@@ -1,8 +1,13 @@
 ---
-import { getWork } from "../../../utils/data";
+import { getWork, slugify } from "../../../utils/data";
 
 export async function getStaticPaths() {
   const work = await getWork();
-  return [{ params: { slug: 'category' }, props: {} }]
+  return work.map(({ data: { categories }}) => {
+    return categories.map(c => ({
+      props: { title: c },
+      params: { slug: slugify(c) }
+    }));
+  }).flat()
 }
 ---
