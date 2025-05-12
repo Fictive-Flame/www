@@ -14,7 +14,7 @@ const work = await getWork();
 <Layout>
   <Nav />
   <SectionHeader>
-    <Container>
+    <Container classes={["px-6", "lg:px-0"]}>
       <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">Work</h1>
       <p class="text-xl text-gray-700 font-light antialiased lg:text-2xl">
         From pre-production to the final cut, we're here every step of the way.
@@ -22,8 +22,14 @@ const work = await getWork();
       </p>
     </Container>
   </SectionHeader>
-  <Container classes={["flex", "grid"]}>
-    {work.map((w) => <WorkFeature {...w} />)}
-  </Container>
+  <div class="mx-auto grid mt-16 grid-cols-12">
+    {
+      work.map((w) => (
+        <div class="col-span-12 mt-4 lg:col-span-6 lg:mt-0">
+          <WorkFeature {...w} />
+        </div>
+      ))
+    }
+  </div>
   <Footer />
 </Layout>

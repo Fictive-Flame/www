@@ -39,14 +39,14 @@ const { title, href } = Astro.props;
       </span>
     </Container>
   </SectionHeader>
-  <Container classes={["flex", "grid", "lg:grid-cols-12", "lg:gap-8"]}>
+  <div class="mx-auto grid mt-16 grid-cols-12">
     {
       work.map((w) => (
-        <div class="lg:col-span-6">
+        <div class="col-span-12 mt-4 lg:col-span-6 lg:mt-0">
           <WorkFeature {...w} />
         </div>
       ))
     }
-  </Container>
+  </div>
   <Footer />
 </Layout>
