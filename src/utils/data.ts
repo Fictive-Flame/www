@@ -11,7 +11,7 @@ export async function getWorkByCategory(category: string) {
   );
 }
 
-export function slugify(input: string) {
+export function slugify(input: string): string {
   input = input.replace(/^\s+|\s+$/g, "");
   input = input.toLowerCase();
   input = input
