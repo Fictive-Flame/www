@@ -6,6 +6,7 @@ description: >-
 categories:
   - Podcast
   - On Location
+poster: https://storage.fictiveflame.co/sanitas-poster.jpg
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/sanitas-craft-and-process-sample.mp4

@@ -28,6 +28,11 @@ const { title, href } = Astro.props;
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
+      <a href="/work">
+        <span class="text-2xl text-gray-700 font-light mb-8 lg:text-3xl block">
+          &larr; Back to Work
+        </span>
+      </a>
       <span class="flex text-4xl text-gray-700 font-bold mb-8 lg:text-8xl">
         <a class="underline underline-offset-4" href="/work"><h2>Work</h2></a>/
         <a href={href}>

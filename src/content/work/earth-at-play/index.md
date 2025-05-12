@@ -6,6 +6,7 @@ type: feature
 categories:
   - Mini Doc
   - Documentary
+poster: https://storage.fictiveflame.co/earth-at-play-poster.jpg
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/earth-at-play-sample.mp4

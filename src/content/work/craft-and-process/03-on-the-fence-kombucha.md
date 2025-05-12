@@ -6,6 +6,7 @@ description: >-
 categories:
   - Podcast
   - On Location
+poster: https://storage.fictiveflame.co/on-the-fence-poster.jpg
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/on-the-fence-craft-and-process-sample.mp4

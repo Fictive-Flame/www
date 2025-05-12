@@ -6,6 +6,7 @@ description: >-
 categories:
   - Podcast
   - On Location
+poster: https://storage.fictiveflame.co/spell-books-poster.jpg
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/spell-books-craft-and-process-sample.mp4
