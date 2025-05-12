@@ -21,3 +21,7 @@ export function slugify(input: string): string {
 
   return input;
 }
+
+export function workUrlFor(title: string): string {
+  return `/work/${slugify(title)}`;
+}

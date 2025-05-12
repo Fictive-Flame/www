@@ -4,6 +4,7 @@ import Nav from "..//components/Nav.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
+import VideoPlayer from "../components/VideoPlayer.astro";
 ---
 
 <Layout>
@@ -22,6 +23,60 @@ import Footer from "../components/Footer.astro";
       </p>
     </Container>
   </SectionHeader>
-  <Container classes={["px-6", "lg:px-0"]} />
+  <div class="relative mt-16 h-[600px] w-full">
+    <div
+      class="absolute w-screen h-4/5 bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-800"
+    >
+    </div>
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="absolute z-10 inset-0 h-full w-full object-cover"
+    >
+      <source
+        src="https://storage.fictiveflame.co/retro.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <Container
+    classes={[
+      "px-6",
+      "mt-16",
+      "lg:px-0",
+      "text-center",
+      "max-w-xl",
+      "text-gray-800",
+    ]}
+  >
+    <h2 class="text-4xl lg:text-6xl text-wrap font-bold mb-8">
+      It all starts with a story...
+    </h2>
+    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
+      Yours, specifically. Whether we're pitching your new product or digging in
+      on a short documentary, everything begins with what you can tell us about
+      your needs, goals, and dreams.
+    </p>
+    <h2 class="text-4xl lg:text-6xl text-wrap font-bold mb-8">
+      Once we've heard it all...
+    </h2>
+    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
+      Then our storytellers get to work on framing your narrative, and
+      presenting a few different ideas. We'll lock in on the details that awaken
+      our sense of wonder, and get back in touch.
+    </p>
+    <h2 class="text-4xl lg:text-6xl text-wrap font-bold antialiased mb-8">
+      After everything, if you like our ideas...
+    </h2>
+    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
+      We sign some papers, put dates on the calendar, and prepare to go to work.
+      A project usually lasts anywhere from a few weeks to a few months. Once
+      it's done, we'll hand over the final product, with a straightforward
+      license that you can use for most anything.
+    </p>
+  </Container>
   <Footer />
 </Layout>

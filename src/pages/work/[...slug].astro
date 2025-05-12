@@ -1,0 +1,49 @@
+---
+import Layout from "../../components/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import Container from "../../components/Container.astro";
+import Footer from "../../components/Footer.astro";
+
+import { getWork, slugify } from "../../utils/data";
+
+export async function getStaticPaths() {
+  const work = await getWork();
+  return work.map((w) => ({
+    props: { ...w, href: `/work/${slugify(w.data.title)}` },
+    params: { slug: slugify(w.data.title) },
+  }));
+}
+
+const {
+  data: { title, description, media },
+} = Astro.props;
+---
+
+<Layout>
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0"]}>
+      <a href="/work">
+        <h2 class="text-2xl text-gray-700 font-light mb-8 lg:text-3xl">
+          &larr; Back to Work
+        </h2>
+      </a>
+      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-6xl">
+        {title}
+      </h1>
+      <p
+        class="text-xl text-gray-700 font-light antialiased lg:text-2xl lg:max-w-4xl"
+      >
+        {description}
+      </p>
+    </Container>
+  </SectionHeader>
+  <Container classes={["px-6", "mt-16", "lg:px-0", "text-gray-800"]}>
+    <video controls class="w-full aspect-video">
+      {media.map((m) => <source src={m.src} type={m.type} />)}
+      Your browser does not support the video tag.
+    </video>
+  </Container>
+  <Footer />
+</Layout>

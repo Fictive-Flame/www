@@ -1,14 +1,16 @@
 ---
-import { slugify } from "../utils/data";
-const { data: { title, categories, preview } } = Astro.props;
+import { slugify, workUrlFor } from "../utils/data";
+const { data: { title, categories, preview, media } } = Astro.props;
 ---
 <div class="overflow-hidden relative h-[500px]">
     <div class="absolute flex w-full h-full items-end z-12 p-4">
         <div>
+            <a href={workUrlFor(title)}>
                 <h2 class="text-2xl text-gray-300 font-bold">
                     <span class="absolute h-full w-full inset-0"></span>
                     {title}
                 </h2>
+            </a>
             <ul class="flex flex-wrap items-center mt-4 text-gray-100 text-sm">
                 {categories.map(c => (
                     <li class="bg-gray-700 backdrop-opacity-40 rounded-2xl me-2">
@@ -29,8 +31,6 @@ const { data: { title, categories, preview } } = Astro.props;
         playsinline
         class="absolute inset-0 z-10 h-full w-full object-cover"
     >
-        {preview.map(p => (
-          <source src={p.src} type={p.type} />
-        ))}
+        {preview.map(p => (<source src={p.src} type={p.type} />))}
     </video>
 </div>
