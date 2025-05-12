@@ -1,5 +1,27 @@
 ---
 import Layout from "../components/Layout.astro";
+import Nav from "..//components/Nav.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import Container from "../components/Container.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout />
+<Layout>
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0"]}>
+      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">
+        Our Process
+      </h1>
+      <p
+        class="text-xl text-gray-700 font-light antialiased lg:text-2xl lg:max-w-4xl"
+      >
+        What we do here at Fictive Flame is pretty special. We're one half
+        engineering firm, the other half film and design. See what happens when
+        art and science mix.
+      </p>
+    </Container>
+  </SectionHeader>
+  <Container classes={["px-6", "lg:px-0"]} />
+  <Footer />
+</Layout>

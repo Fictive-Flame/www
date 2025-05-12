@@ -133,27 +133,38 @@ import Footer from "../components/Footer.astro";
   <Container classes={["mt-24", "px-6", "lg:px-0"]}>
     <div class="overflow-hidden relative h-[500px] rounded-2xl bg-gray-100">
       <div
-        class="relative flex w-full h-full items-center z-40 text-gray-200 align-middle justify-center"
+        class="relative flex h-full items-center text-gray-200 align-middle justify-center p-8"
       >
-        <div
-          class="text-2xl lg:text-4xl font-bold antialiased text-shadow-lg text-shadow-gray-900"
-        >
-          Made in Colorado
+        <div class="font-bold z-40 antialiased text-center">
+          <span
+            class="text-2xl lg:text-4xl block mb-4 text-shadow-lg text-shadow-gray-900"
+            >Made in Colorado</span
+          >
+          <p class="text-xl font-light">
+            We're proud to hail from the American West, with it's breathtaking
+            views and rugged landscapes. As filmmakers, we document it. As
+            conservationists, we leave everywhere cleaner and never interrupt
+            nature.
+          </p>
         </div>
+        <div
+          class="absolute w-screen h-full bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-950"
+        >
+        </div>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="absolute inset-0 z-10 h-full w-full object-cover"
+        >
+          <source
+            src="https://storage.fictiveflame.co/red-rocks-sample.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="absolute inset-0 z-10 h-full w-full object-cover"
-      >
-        <source
-          src="https://storage.fictiveflame.co/red-rocks-sample.mp4"
-          type="video/mp4"
-        />
-      </video>
     </div>
+    <Footer />
   </Container>
-  <Footer />
 </Layout>

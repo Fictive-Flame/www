@@ -15,17 +15,21 @@ const work = await getWork();
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
-      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">Work</h1>
-      <p class="text-xl text-gray-700 font-light antialiased lg:text-2xl">
+      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">
+        Featured Work
+      </h1>
+      <p
+        class="text-xl text-gray-700 font-light antialiased lg:text-2xl lg:max-w-4xl"
+      >
         From pre-production to the final cut, we're here every step of the way.
-        This is a rotating selection of our best work.
+        Here are a few of our favorite recent productions.
       </p>
     </Container>
   </SectionHeader>
   <div class="mx-auto grid mt-16 grid-cols-12">
     {
       work.map((w) => (
-        <div class="col-span-12 mt-4 lg:col-span-6 lg:mt-0">
+        <div class="col-span-12 lg:col-span-6">
           <WorkFeature {...w} />
         </div>
       ))

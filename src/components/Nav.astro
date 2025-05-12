@@ -4,8 +4,19 @@ const classes = Astro.props.classes || [];
 ---
 
 <nav
-  x-data="{ open: false }"
-  @scroll.window="open = (window.pageYOffset > 50 ? false : true)"
+  x-data="{
+    open: false,
+    lockScroll() {
+        document.body.classList.add('overflow-hidden');
+    },
+    unlockScroll() {
+        document.body.classList.remove('overflow-hidden');
+    },
+    toggleMenu(state) {
+        this.open = state;
+        state ? this.lockScroll() : this.unlockScroll();
+    }
+  }"
   class="fixed top-0 z-50 w-full bg-gray-950 text-gray-300"
 >
   <Container classes={["flex", "py-6", "px-6", "justify-between"]}>
@@ -42,7 +53,44 @@ const classes = Astro.props.classes || [];
         </svg>
       </span>
     </div>
-    <ul class="flex uppercase font-light">
+    <button
+      @click="toggleMenu(true)"
+      class="inline-block text-gray-200 hover:text-gray-400 transition hover:scale-110 cursor-pointer lg:hidden"
+    >
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="-0.5 0 25 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 3.32001H16C14.8954 3.32001 14 4.21544 14 5.32001V8.32001C14 9.42458 14.8954 10.32 16 10.32H19C20.1046 10.32 21 9.42458 21 8.32001V5.32001C21 4.21544 20.1046 3.32001 19 3.32001Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M8 3.32001H5C3.89543 3.32001 3 4.21544 3 5.32001V8.32001C3 9.42458 3.89543 10.32 5 10.32H8C9.10457 10.32 10 9.42458 10 8.32001V5.32001C10 4.21544 9.10457 3.32001 8 3.32001Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M19 14.32H16C14.8954 14.32 14 15.2154 14 16.32V19.32C14 20.4246 14.8954 21.32 16 21.32H19C20.1046 21.32 21 20.4246 21 19.32V16.32C21 15.2154 20.1046 14.32 19 14.32Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M8 14.32H5C3.89543 14.32 3 15.2154 3 16.32V19.32C3 20.4246 3.89543 21.32 5 21.32H8C9.10457 21.32 10 20.4246 10 19.32V16.32C10 15.2154 9.10457 14.32 8 14.32Z"
+          stroke="#ffffff"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <ul class="hidden lg:flex uppercase font-light">
       <li>
         <a class="me-4 underline-offset-8 hover:underline" href="/work">Work</a>
       </li>
@@ -58,4 +106,31 @@ const classes = Astro.props.classes || [];
       </li>
     </ul>
   </Container>
+  <div
+    x-show="open"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    class="fixed inset-0 z-50 bg-gray-950 text-gray-200 flex flex-col items-center justify-center space-y-8 font-humanist font-bold uppercase overflow-hidden"
+  >
+    <button
+      @click="toggleMenu(false)"
+      class="absolute top-6 right-6 text-3xl hover:text-gray-400 cursor-pointer"
+      >✕</button
+    >
+    <a href="/" class="text-5xl hover:text-gray-400 transition duration-300"
+      >Home</a
+    >
+    <a href="/work" class="text-5xl hover:text-gray-400 transition duration-300"
+      >Work</a
+    >
+    <a
+      href="#contact"
+      @click="toggleMenu(false)"
+      class="text-5xl hover:text-gray-400 transition duration-300">Contact</a
+    >
+  </div>
 </nav>
