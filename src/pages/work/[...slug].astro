@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 const {
-  data: { title, description, poster, media },
+  data: { title, description, poster, media, categories },
 } = Astro.props;
 ---
 
@@ -44,6 +44,16 @@ const {
       {media.map((m) => <source src={m.src} type={m.type} />)}
       Your browser does not support the video tag.
     </video>
+    <div class="flex items-center mt-4">
+        <span class="p-2 me-2 text-lg">Categories:</span>
+        <ul class="flex flex-wrap items-center text-gray-100 text-sm">
+            {categories.map(c => (
+                <li class="bg-gray-700 backdrop-opacity-10 rounded-3xl me-2">
+                    <a class="p-2 inline-block" href=`/work/category/${slugify(c)}`>{c}</a>
+                </li>
+            ))}
+        </ul>
+    </div>
   </Container>
   <Footer />
 </Layout>

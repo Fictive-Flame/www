@@ -6,9 +6,12 @@ import Container from "../../components/Container.astro";
 import WorkFeature from "../../components/WorkFeature.astro";
 import Footer from "../../components/Footer.astro";
 
-import { getWork } from "../../utils/data";
+import { getWork, slugify } from "../../utils/data";
 
 const work = await getWork();
+const categories = [
+  ...new Set(work.map(({ data: { categories } }) => categories).flat()),
+];
 ---
 
 <Layout title="Featured Work">
@@ -27,6 +30,32 @@ const work = await getWork();
     </Container>
   </SectionHeader>
   <div class="mx-auto grid mt-16 grid-cols-12">
+    <Container
+      classes={[
+        "px-6",
+        "lg:px-0",
+        "col-span-12",
+        "text-sm",
+        "uppercase",
+        "mb-2",
+      ]}
+    >
+      <div class="mb-2"><span>Categories</span></div>
+      <ul class="flex overflow-y-scroll">
+        {
+          categories.map((c) => (
+            <li class="me-4 font-semibold antialiased">
+              <a
+                class="hover:text-gray-400"
+                href={`/work/category/${slugify(c)}`}
+              >
+                {c}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </Container>
     {
       work.map((w) => (
         <div class="col-span-12 lg:col-span-6">
@@ -35,5 +64,5 @@ const work = await getWork();
       ))
     }
   </div>
-  <Footer />
 </Layout>
+<Footer />
