@@ -65,7 +65,7 @@ const { title, href } = Astro.props;
       <ul class="flex overflow-y-scroll">
         {
           categories.map((c) => (
-            <li class="me-4 font-semibold antialiased">
+            <li class="me-4 font-semibold antialiased text-nowrap">
               <a
                 class="hover:text-gray-400"
                 href={`/work/category/${slugify(c)}`}

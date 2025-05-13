@@ -39,7 +39,7 @@ const {
       </p>
     </Container>
   </SectionHeader>
-  <Container classes={["px-6", "mt-16", "lg:px-0", "text-gray-800"]}>
+  <Container classes={["px-6", "mt-12", "lg:px-0", "text-gray-800"]}>
     <video controls playsinline poster={poster} class="w-full aspect-video">
       {media.map((m) => <source src={m.src} type={m.type} />)}
       Your browser does not support the video tag.
@@ -49,7 +49,7 @@ const {
       <ul class="flex overflow-y-scroll">
         {
           categories.map((c) => (
-            <li class="me-4 font-semibold antialiased">
+            <li class="me-4 font-semibold antialiased text-nowrap">
               <a
                 class="hover:text-gray-400"
                 href={`/work/category/${slugify(c)}`}
