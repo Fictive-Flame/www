@@ -6,12 +6,10 @@ import Container from "../../components/Container.astro";
 import WorkFeature from "../../components/WorkFeature.astro";
 import Footer from "../../components/Footer.astro";
 
-import { getWork, slugify } from "../../utils/data";
+import { getWork, getWorkCategories, slugify } from "../../utils/data";
 
 const work = await getWork();
-const categories = [
-  ...new Set(work.map(({ data: { categories } }) => categories).flat()),
-];
+const categories = getWorkCategories(work);
 ---
 
 <Layout title="Featured Work">

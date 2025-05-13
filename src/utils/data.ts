@@ -25,3 +25,9 @@ export function slugify(input: string): string {
 export function workUrlFor(title: string): string {
   return `/work/${slugify(title)}`;
 }
+
+export function getWorkCategories(work) {
+  return [
+    ...new Set(work.map(({ data: { categories } }) => categories).flat()),
+  ];
+}
