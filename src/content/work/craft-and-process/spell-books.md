@@ -2,7 +2,7 @@
 title: "Spell Books: Craft and Process"
 type: series
 description: >-
-  At 800 square feet, Spell Books is missing a lot of square footage. However, for what they lack in space, they make up for in personality.
+  At 800 square feet, Spell Books is missing much of the usual space of a bookstore. However, for what they lack in area, they make up for in personality.
 categories:
   - Podcast
   - On Location
