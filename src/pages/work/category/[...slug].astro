@@ -24,7 +24,7 @@ const work = await getWorkByCategory(Astro.props.title);
 const { title, href } = Astro.props;
 ---
 
-<Layout>
+<Layout category={`${title} - Work`}>
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>

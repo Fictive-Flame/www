@@ -2,6 +2,10 @@
 import "../styles/global.css";
 import poster from "../assets/background-poster.jpg";
 
+const title =
+  Astro.props.title && Astro.props.title !== ""
+    ? `${Astro.props.title} | Fictive Flame Media`
+    : "Fictive Flame Media";
 const classes = Astro.props.classes || [];
 ---
 
@@ -19,7 +23,7 @@ const classes = Astro.props.classes || [];
       defer
       src="https://cloud.umami.is/script.js"
       data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
-    <title>Fictive Flame Media</title>
+    <title>{title}</title>
   </head>
   <body class:list={["font-humanist", ...classes]}>
     <slot />
