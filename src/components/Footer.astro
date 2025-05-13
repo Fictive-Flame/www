@@ -10,49 +10,8 @@
       </p>
     </div>
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <script type="text/javascript">
-        function contactForm() {
-          return {
-            loading: false,
-            submitted: false,
-            data: {
-              name: "",
-              email: "",
-              message: "",
-            },
-            submit() {
-              this.loading = true;
-
-              fetch("https://www.formbackend.com/f/61a483e23fd551e1", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                },
-                body: JSON.stringify(this.data),
-              })
-                .then((response) => {
-                  if (response.status === 422) {
-                    throw new Error("Validation error");
-                  } else if (!response.ok) {
-                    throw new Error("Something went wrong");
-                  }
-
-                  return response.json();
-                })
-                .then((data) => {
-                  this.submitted = true;
-                  this.loading = false;
-                })
-                .catch((error) => {
-                  console.error("Error:", error);
-                });
-            },
-          };
-        }
-      </script>
       <form
-        x-data="contactForm()"
+        x-data="buildContactForm()"
         @submit.prevent="submit"
         action="https://www.formbackend.com/f/61a483e23fd551e1"
         method="POST"
@@ -109,20 +68,17 @@
     &copy; 2025 Fictive Flame Media. All rights reserved.
   </p>
 </footer>
-
-<script>
-  function contactFormThing() {
+<script is:inline>
+  function buildContactForm() {
     return {
-      loading: true,
+      loading: false,
       submitted: false,
-
       data: {
+        name: "",
         email: "",
         message: "",
       },
-
-      submitForm() {
-        alert("GO");
+      submit() {
         this.loading = true;
 
         fetch("https://www.formbackend.com/f/61a483e23fd551e1", {
@@ -133,17 +89,21 @@
           },
           body: JSON.stringify(this.data),
         })
-          .then(() => {
-            alert("Form submitted");
+          .then((response) => {
+            if (response.status === 422) {
+              throw new Error("Validation error");
+            } else if (!response.ok) {
+              throw new Error("Something went wrong");
+            }
+
+            return response.json();
           })
-          .catch(() => {
-            alert("Something went wrong");
-          })
-          .finally(() => {
-            this.data.email = "";
-            this.data.message = "";
-            this.loading = false;
+          .then((data) => {
             this.submitted = true;
+            this.loading = false;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
           });
       },
     };
