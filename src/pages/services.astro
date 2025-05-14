@@ -31,6 +31,14 @@ const media = {
       },
     ],
   },
+  create: {
+    media: [
+      {
+        type: "video/mp4",
+        src: "https://storage.fictiveflame.co/snow.mp4",
+      },
+    ],
+  },
   launch: {
     media: [
       {
@@ -217,7 +225,7 @@ const media = {
     >
       <div>
         <h3 class="text-wrap text-3xl font-medium mb-8 lg:text-4xl">
-          Pre-Production and Strategic Planning
+          Pre-Production
         </h3>
         <p
           class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
@@ -238,11 +246,40 @@ const media = {
       </div>
     </div>
     <div
-      class="grid-span-1 order-5 mt-12 lg:col-span-8 lg:flex lg:mt-0 lg:items-center"
+      class="grid-span-1 order-5 flex items-center mt-12 lg:mt-0 lg:col-span-8"
     >
       <div>
         <h3 class="text-wrap text-3xl font-medium mb-8 lg:text-4xl">
-          Launch Day
+          Frame by Frame
+        </h3>
+        <p
+          class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
+        >
+          Once we've decided on a destination, we gather the team, gear, and
+          budget. We operate lean and take you behind the process at every
+          chance.
+        </p>
+        <p
+          class="text-wrap text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+        >
+          After any revisions are done, we'll render a final version to ensure
+          colors, contrast, interaction, and every other creative decision is
+          perfect for your approval.
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 order-6 mt-12 lg:mt-0 lg:col-span-4">
+      <VWindow data={media.create} rounded />
+    </div>
+    <div class="col-span-1 order-last mt-12 lg:order-7 lg:col-span-4 lg:mt-0">
+      <VWindow data={media.launch} rounded />
+    </div>
+    <div
+      class="grid-span-1 order-8 mt-12 lg:col-span-8 lg:flex lg:mt-0 lg:items-center"
+    >
+      <div>
+        <h3 class="text-wrap text-3xl font-medium mb-8 lg:text-4xl">
+          Countdown to Launch
         </h3>
         <p
           class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
@@ -260,9 +297,6 @@ const media = {
           creative spark alight.
         </p>
       </div>
-    </div>
-    <div class="col-span-1 order-last mt-12 lg:col-span-4 lg:mt-0">
-      <VWindow data={media.launch} rounded />
     </div>
   </Container>
   <Footer />
