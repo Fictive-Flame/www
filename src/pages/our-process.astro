@@ -4,7 +4,16 @@ import Nav from "..//components/Nav.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
-import VideoPlayer from "../components/VideoPlayer.astro";
+import VWindow from "../components/VWindow.astro";
+
+const vMedia = {
+  media: [
+    {
+      type: "video/mp4",
+      src: "https://storage.fictiveflame.co/retro.mp4",
+    },
+  ],
+};
 ---
 
 <Layout title="Our Process">
@@ -23,62 +32,88 @@ import VideoPlayer from "../components/VideoPlayer.astro";
       </p>
     </Container>
   </SectionHeader>
-  <div class="relative mt-16 h-[400px] w-full">
-    <div
-      class="absolute w-screen h-4/5 bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-800"
-    >
-    </div>
-    <video
-      autoplay
-      loop
-      muted
-      playsinline
-      class="absolute z-10 inset-0 h-full w-full object-cover"
-    >
-      <source
-        src="https://storage.fictiveflame.co/retro.mp4"
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </video>
-  </div>
   <Container
     classes={[
       "px-6",
       "mt-16",
       "lg:px-0",
-      "text-center",
-      "max-w-xl",
       "text-gray-800",
+      "grid",
+      "grid-cols-1",
+      "lg:grid-cols-12",
+      "lg:gap-12",
     ]}
   >
-    <h2 class="text-3xl lg:text-4xl text-wrap font-bold mb-8 uppercase">
-      It all starts with a story
-    </h2>
-    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
-      Yours, specifically. Whether we're pitching your new product or digging in
-      on a short documentary, everything begins with what you can tell us about
-      your needs, goals, and dreams.
-    </p>
-    <h2 class="text-3xl lg:text-4xl text-wrap font-bold mb-8 uppercase">
-      We shape it into a project
-    </h2>
-    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
-      Then our storytellers get to work on framing your narrative, and
-      presenting a few different ideas. We'll lock in on the details that awaken
-      our sense of wonder, and get back in touch.
-    </p>
-    <h2
-      class="text-3xl lg:text-4xl text-wrap font-bold antialiased mb-8 uppercase"
+    <div
+      class="grid-span-1 order-1 sm:mt-8 lg lg:col-span-8 lg:flex lg:items-center"
     >
-      Filming, Editing, Post Production
-    </h2>
-    <p class="text-2xl text-wrap antialiased mt-4 mb-12 font-light">
-      We sign some papers, put dates on the calendar, and prepare to go to work.
-      A project usually lasts anywhere from a few weeks to a few months. Once
-      it's done, we'll hand over the final product, with a straightforward
-      license that you can use for most anything.
-    </p>
+      <div>
+        <h3 class="text-4xl font-medium mb-8">1. Discourse and Discovery</h3>
+        <p class="text-xl text-gray-700 font-light antialiased lg:text-2xl">
+          Whether you're launching a new product, looking for a deep-dive
+          explainer, or kicking off a long documentary project, the journey all
+          begins with where you are.
+        </p>
+        <p
+          class="text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+        >
+          Maybe you need more than a video. That's okay, we're a full
+          interactive design firm. Either way, we're working to understand your
+          goals, concerns, and passions before proposing any creative direction.
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 order-2 sm:my-8 lg:col-span-4">
+      <VWindow data={vMedia} rounded />
+    </div>
+    <div class="col-span-1 order-4 lg:order-3 sm:my-8 lg:col-span-4">
+      <VWindow data={vMedia} rounded />
+    </div>
+    <div
+      class="grid-span-1 order-3 lg:order-4 sm:mt-8 lg:col-span-8 lg:flex lg:items-center"
+    >
+      <div>
+        <h3 class="text-4xl font-medium mb-8">
+          2. Pre-Production and Strategic Planning
+        </h3>
+        <p class="text-xl text-gray-700 font-light antialiased lg:text-2xl">
+          Using your story as fuel, we'll create a marketing and production plan
+          that outlines the project goals and defines a clear roadmap to
+          success.
+        </p>
+        <p
+          class="text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+        >
+          If this is your first time using interactive or video marketing, don't
+          worry. You have an internationally-experienced group of video
+          creators, engineers, and data analysts to help crunch all the numbers.
+        </p>
+      </div>
+    </div>
+    <div
+      class="grid-span-1 order-5 sm:mt-8 lg:col-span-8 lg:flex lg:items-center"
+    >
+      <div>
+        <h3 class="text-4xl font-medium mb-8">3. Launch Day</h3>
+        <p class="text-xl text-gray-700 font-light antialiased lg:text-2xl">
+          Whether it's a one-day or one-year engagement, we've got experience
+          running projects of all sizes. Our digital production team will ensure
+          you have all of the assets you need, from live streams though to
+          videos for your social channels.
+        </p>
+        <p
+          class="text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+        >
+          We handle music clearance and deliver the finished project to you, or
+          we can handle hosting and distribution. It's really up to you and your
+          needs, because after all, we're here to keep your creative spark
+          alight.
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 order-last sm:my-8 lg:col-span-4">
+      <VWindow data={vMedia} rounded />
+    </div>
   </Container>
   <Footer />
 </Layout>

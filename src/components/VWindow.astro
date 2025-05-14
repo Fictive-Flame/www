@@ -1,0 +1,22 @@
+---
+const {
+  data: { media, ...rest },
+} = Astro.props;
+---
+
+<div class="overflow-hidden relative w-full h-[500px] rounded-2xl">
+  <div
+    class="absolute w-full h-4/5 bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-950/90"
+  >
+  </div>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 z-10 h-full w-full object-cover"
+    {...rest}
+  >
+    {media.map((p) => <source src={p.src} type={p.type} />)}
+  </video>
+</div>
