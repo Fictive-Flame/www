@@ -74,6 +74,50 @@ const media = {
       class="bg-gray-50 rounded-2xl shadow-lg p-6 col-span-1 lg:col-span-12"
       x-data="{ selected: 'Strategy' }"
     >
+      <ul
+        class="flex justify-around mb-16 space-x-2 text-nowrap overflow-y-scroll"
+      >
+        <li>
+          <button
+            @click="selected = 'Strategy'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 1' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Strategy</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Live Streaming'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 2' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Live Streaming</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Production'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Production</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Color Grading'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Color Grading</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Design and Delivery'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Design and Delivery</button
+          >
+        </li>
+      </ul>
       <div class="flex flex-col">
         <h2
           class="text-3xl lg:text-5xl w-full font-bold text-gray-900 text-center mb-2"
@@ -135,50 +179,6 @@ const media = {
           </template>
         </div>
       </div>
-      <ul
-        class="flex justify-around mt-16 space-x-2 text-nowrap overflow-y-scroll"
-      >
-        <li>
-          <button
-            @click="selected = 'Strategy'"
-            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
-            :class="selected === 'Option 1' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
-            >Strategy</button
-          >
-        </li>
-        <li>
-          <button
-            @click="selected = 'Live Streaming'"
-            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
-            :class="selected === 'Option 2' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
-            >Live Streaming</button
-          >
-        </li>
-        <li>
-          <button
-            @click="selected = 'Production'"
-            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
-            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
-            >Production</button
-          >
-        </li>
-        <li>
-          <button
-            @click="selected = 'Color Grading'"
-            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
-            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
-            >Color Grading</button
-          >
-        </li>
-        <li>
-          <button
-            @click="selected = 'Design and Delivery'"
-            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
-            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
-            >Design and Delivery</button
-          >
-        </li>
-      </ul>
     </div>
     <div class="col-span-1 my-12 text-center lg:my-8 lg:col-span-12">
       <h3 class="text-5xl text-gray-600 font-bold lg:text-6xl">Our Process</h3>
