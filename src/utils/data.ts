@@ -1,4 +1,4 @@
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 
 export async function getWork() {
   return await getCollection("work");
@@ -30,4 +30,8 @@ export function getWorkCategories(work) {
   return [
     ...new Set(work.map(({ data: { categories } }) => categories).flat()),
   ];
+}
+
+export async function getWorkSections() {
+  return await getCollection("processes");
 }

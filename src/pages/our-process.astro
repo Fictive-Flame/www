@@ -5,6 +5,14 @@ import SectionHeader from "../components/SectionHeader.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
 import VWindow from "../components/VWindow.astro";
+import { getWorkSections } from "../utils/data";
+import { map } from "astro:schema";
+
+const sections = await getWorkSections();
+const features = sections
+  .filter((s) => s.data.type === "feature")
+  .map((v) => ({ [v.data.title]: v.data.description }))
+  .reduce((a, v) => ({ ...a, ...v }));
 
 const media = {
   discovery: {
@@ -62,6 +70,116 @@ const media = {
       "lg:gap-12",
     ]}
   >
+    <div
+      class="bg-gray-50 rounded-2xl shadow-lg p-6 mb-16 col-span-1 lg:col-span-12"
+      x-data="{ selected: 'Strategy' }"
+    >
+      <div class="flex flex-col">
+        <h2
+          class="text-5xl w-full font-bold text-gray-900 text-center mb-2"
+          x-text="selected"
+        >
+        </h2>
+        <div
+          class="w-full text-gray-800 text-2xl antialiased font-light min-h-40 max-w-4xl mx-auto mt-8 text-center"
+        >
+          <template x-if="selected === 'Strategy'">
+            <div x-transition>
+              <p>
+                Modern video production is complex: you need vertical and
+                horizontal formats, optimized for each channel where they're
+                being published. Good news is we've been doing this a long time,
+                and we're here to make a plan.
+              </p>
+            </div>
+          </template>
+          <template x-if="selected === 'Live Streaming'">
+            <div x-transition>
+              <p>
+                Our unique approach make it just as easy to stream as it does to
+                record cinema-grade images, and our cloud engineering expertise
+                ensures your viewers can reliably tune in from around the world.
+              </p>
+            </div>
+          </template>
+          <template x-if="selected === 'Production'">
+            <div x-transition>
+              <p>
+                From the first frame to final cut, our editing and
+                post-production workflow utilizes latest versions Final Cut Pro
+                and DaVinci Resolve, and we work in professionally treated,
+                acoustically flat studio.
+              </p>
+            </div>
+          </template>
+          <template x-if="selected === 'Color Grading'">
+            <div x-transition>
+              <p>
+                Whether you're ingesting footage from multiple cameras or
+                building a world out of stock footage, our color grading
+                expertise can help all of your scenes live in the same visual
+                world.
+              </p>
+            </div>
+          </template>
+          <template x-if="selected === 'Design and Delivery'">
+            <div x-transition>
+              <p>
+                While creating engaging videos for the web is the primary goal,
+                our team designed and built this website, too. We're multimedia
+                artisans, and if you're missing a place that showcases your
+                work, let's talk. We offer design consultation and art direction
+                to compliment our other specialities.
+              </p>
+            </div>
+          </template>
+        </div>
+      </div>
+      <ul
+        class="flex justify-around mt-16 space-x-2 text-nowrap overflow-y-scroll"
+      >
+        <li>
+          <button
+            @click="selected = 'Strategy'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 1' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Strategy</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Live Streaming'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 2' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Live Streaming</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Production'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Production</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Color Grading'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Color Grading</button
+          >
+        </li>
+        <li>
+          <button
+            @click="selected = 'Design and Delivery'"
+            class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :class="selected === 'Option 3' ? 'bg-gray-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'"
+            >Design and Delivery</button
+          >
+        </li>
+      </ul>
+    </div>
     <div
       class="col-span-1 order-1 mb-12 lg:mt-0 lg:col-span-8 lg:flex lg:items-center"
     >

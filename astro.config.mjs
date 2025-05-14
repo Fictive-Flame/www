@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import alpine from "@astrojs/alpinejs";
 import cloudflare from "@astrojs/cloudflare";
 
 const site = import.meta.env.CF_PAGES_URL || "https://fictiveflame.co";
@@ -10,6 +11,6 @@ const site = import.meta.env.CF_PAGES_URL || "https://fictiveflame.co";
 export default defineConfig({
   site,
   vite: { plugins: [tailwind()] },
-  integrations: [sitemap()],
+  integrations: [sitemap(), alpine()],
   adapter: cloudflare(),
 });
