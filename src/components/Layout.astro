@@ -1,4 +1,10 @@
 ---
+interface Props {
+  title?: string;
+  description?: string;
+  classes?: [string];
+}
+
 import "../styles/global.css";
 import poster from "../assets/background-poster.jpg";
 
@@ -7,6 +13,8 @@ const title =
     ? `${Astro.props.title} | Fictive Flame Media`
     : "Fictive Flame Media";
 const classes = Astro.props.classes || [];
+
+const { description } = Astro.props;
 ---
 
 <html lang="en">
@@ -20,6 +28,7 @@ const classes = Astro.props.classes || [];
       defer
       src="https://cloud.umami.is/script.js"
       data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
+    {description && <meta name="description" content={description} />}
     <title>{title}</title>
   </head>
   <body class:list={["font-humanist", ...classes]}>
