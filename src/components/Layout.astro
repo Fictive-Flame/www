@@ -1,20 +1,15 @@
 ---
+import "../styles/global.css";
+import poster from "../assets/poster.jpg";
+
 interface Props {
   title?: string;
   description?: string;
   classes?: [string];
+  image?: string;
 }
 
-import "../styles/global.css";
-import poster from "../assets/poster.jpg";
-
-const title =
-  Astro.props.title && Astro.props.title !== ""
-    ? `${Astro.props.title} | Fictive Flame Media`
-    : "Fictive Flame Media";
-const classes = Astro.props.classes || [];
-
-const { description } = Astro.props;
+const { title, classes, description, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -23,15 +18,27 @@ const { description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="og:image" content={poster.src} />
+    {
+      image ? (
+        <meta name="og:image" content={image} />
+      ) : (
+        <meta name="og:image" content={poster.src} />
+      )
+    }
+    {description && <meta name="description" content={description} />}
+    {
+      title ? (
+        <title>{title} | Fictive Flame Media</title>
+      ) : (
+        <title>Fictive Flame Media</title>
+      )
+    }
     <script
       defer
       src="https://cloud.umami.is/script.js"
       data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
-    {description && <meta name="description" content={description} />}
-    <title>{title}</title>
   </head>
-  <body class:list={["font-humanist", ...classes]}>
+  <body class:list={["font-humanist", ...(classes || [])]}>
     <slot />
   </body>
 </html>
