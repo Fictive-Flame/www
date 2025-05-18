@@ -56,11 +56,13 @@ const media = {
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
-      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">
+      <h1
+        class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+      >
         Services
       </h1>
       <p
-        class="text-2xl text-gray-700 font-light antialiased lg:text-3xl lg:max-w-6xl"
+        class="text-2xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-3xl lg:max-w-6xl"
       >
         What we do here at Fictive Flame is pretty special. We're one half film
         and design, the other is an engineering firm. See what happens when art
@@ -74,6 +76,7 @@ const media = {
       "mt-12",
       "lg:px-0",
       "text-gray-800",
+      "dark:text-gray-300",
       "grid",
       "grid-cols-1",
       "lg:grid-cols-12",
@@ -81,7 +84,7 @@ const media = {
     ]}
   >
     <div
-      class="bg-gray-50 rounded-2xl shadow-lg p-6 col-span-1 lg:col-span-12"
+      class="bg-gray-50 dark:bg-gray-950 rounded-2xl shadow-lg p-6 col-span-1 lg:col-span-12"
       x-data="{ selected: 'Strategy' }"
     >
       <ul
@@ -130,12 +133,12 @@ const media = {
       </ul>
       <div class="flex flex-col">
         <h2
-          class="text-3xl lg:text-5xl w-full font-bold text-gray-900 text-center mb-2"
+          class="text-3xl lg:text-5xl w-full font-bold text-gray-900 dark:text-gray-300 text-center mb-2"
           x-text="selected"
         >
         </h2>
         <div
-          class="w-full text-gray-800 text-xl antialiased font-light min-h-40 max-w-4xl mx-auto mt-8 text-center lg:text-2xl"
+          class="w-full text-gray-800 dark:text-gray-200 text-xl antialiased font-light min-h-40 max-w-4xl mx-auto mt-8 text-center lg:text-2xl"
         >
           <template x-if="selected === 'Strategy'">
             <div x-transition>
@@ -191,7 +194,11 @@ const media = {
       </div>
     </div>
     <div class="col-span-1 my-12 text-center lg:my-8 lg:col-span-12">
-      <h3 class="text-5xl text-gray-600 font-bold lg:text-6xl">Our Process</h3>
+      <h3
+        class="text-5xl text-gray-600 dark:text-gray-300 font-bold lg:text-6xl"
+      >
+        Our Process
+      </h3>
     </div>
     <div
       class="col-span-1 order-1 mb-12 lg:mt-0 lg:col-span-8 lg:flex lg:items-center"
@@ -201,14 +208,14 @@ const media = {
           Conversation and Discovery
         </h3>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-2xl"
         >
           Whether you're launching a new product, looking for a deep-dive
           explainer, or kicking off a long documentary project, the journey all
           begins with where you are.
         </p>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased mt-8 lg:text-2xl"
         >
           Maybe you need more than a video. That's okay, we're a full
           interactive design firm. Either way, we're working to understand your
@@ -230,14 +237,14 @@ const media = {
           Pre-Production
         </h3>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-2xl"
         >
           Using your story as fuel, we'll create a marketing and production plan
           that outlines the project goals and defines a clear roadmap to
           success.
         </p>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased mt-8 lg:text-2xl"
         >
           If this is your first time using interactive or video marketing, don't
           worry. From the days of dial-up to high definition, our team has
@@ -255,14 +262,14 @@ const media = {
           Frame by Frame
         </h3>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-2xl"
         >
           Once we've decided on a destination, we gather the team, gear, and
           budget. We operate lean and take you behind the process at every
           chance.
         </p>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased mt-8 lg:text-2xl"
         >
           After any revisions are done, we'll render a final version to ensure
           colors, contrast, interaction, and every other creative decision is
@@ -284,7 +291,7 @@ const media = {
           Countdown to Launch
         </h3>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-2xl"
         >
           Whether it's a three-day or three-year engagement, we've got
           experience running projects of all sizes. Our digital production team
@@ -292,7 +299,7 @@ const media = {
           streaming live to the world, or uploading to your social channels.
         </p>
         <p
-          class="text-wrap text-xl text-gray-700 font-light antialiased mt-8 lg:text-2xl"
+          class="text-wrap text-xl text-gray-700 dark:text-gray-200 font-light antialiased mt-8 lg:text-2xl"
         >
           We can handle clearance and deliver the finished project to you, or
           distribute it as a service. Because after all, we're here to keep your

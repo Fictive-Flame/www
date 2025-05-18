@@ -16,11 +16,13 @@ const categories = getWorkCategories(work);
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
-      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-8xl">
+      <h1
+        class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+      >
         Featured Work
       </h1>
       <p
-        class="text-2xl text-gray-700 font-light antialiased lg:text-3xl lg:max-w-6xl"
+        class="text-2xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-3xl lg:max-w-6xl"
       >
         From pre-production to the final cut, we're here every step of the way.
         Here are a few of our favorite recent productions.
@@ -38,8 +40,8 @@ const categories = getWorkCategories(work);
         "mb-2",
       ]}
     >
-      <div class="mb-2"><span>Categories</span></div>
-      <ul class="flex overflow-y-scroll">
+      <div class="mb-2 dark:text-gray-300"><span>Categories</span></div>
+      <ul class="flex overflow-y-scroll dark:text-gray-300">
         {
           categories.map((c) => (
             <li class="me-4 font-semibold antialiased text-nowrap">

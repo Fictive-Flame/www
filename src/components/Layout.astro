@@ -38,7 +38,9 @@ const { title, classes, description, image } = Astro.props;
       src="https://cloud.umami.is/script.js"
       data-website-id="d1356b51-617b-4df3-b5fd-eab591af73b6"></script>
   </head>
-  <body class:list={["font-humanist", ...(classes || [])]}>
+  <body
+    class:list={["font-humanist", "dark:bg-neutral-900", ...(classes || [])]}
+  >
     <slot />
   </body>
 </html>

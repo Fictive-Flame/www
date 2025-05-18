@@ -26,16 +26,18 @@ const {
     <Container classes={["px-6", "lg:px-0"]}>
       <a href="/work">
         <span
-          class="text text-gray-700 font-light mb-8 block underline underline-offset-2"
+          class="text text-gray-700 dark:text-gray-400 font-light mb-8 block underline underline-offset-2"
         >
           &larr; Back to Work
         </span>
       </a>
-      <h1 class="text-4xl text-gray-800 font-bold mb-8 lg:text-6xl">
+      <h1
+        class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-6xl"
+      >
         {title}
       </h1>
       <p
-        class="text-xl text-gray-700 font-light antialiased lg:text-2xl lg:max-w-6xl"
+        class="text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-2xl lg:max-w-6xl"
       >
         {description}
       </p>
@@ -47,8 +49,8 @@ const {
       Your browser does not support the video tag.
     </video>
     <div class="mt-4 uppercase text-sm">
-      <div class="mb-2"><span>Categories</span></div>
-      <ul class="flex overflow-y-scroll">
+      <div class="mb-2 dark:text-gray-300"><span>Categories</span></div>
+      <ul class="flex overflow-y-scroll dark:text-gray-300">
         {
           categories.map((c) => (
             <li class="me-4 font-semibold antialiased text-nowrap">
