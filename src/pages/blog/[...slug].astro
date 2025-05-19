@@ -7,7 +7,7 @@ import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
 import { getPosts, getPost, formatDate } from "../../utils/data";
 
-import { Image, getImage } from "astro:assets";
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -41,7 +41,7 @@ const { Content } = await render(entry);
       <span
         class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
       >
-        <a href={`/posts/${entry.id}`}>
+        <a href={`/blog/${entry.id}`}>
           <h1 class="text-gray-800 dark:text-gray-400">{title}</h1>
         </a>
       </span>

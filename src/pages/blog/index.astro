@@ -7,7 +7,7 @@ import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
 import { getPosts, getPost, formatDate } from "../../utils/data";
 
-import { Image, getImage } from "astro:assets";
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -27,7 +27,7 @@ const posts = await getPosts();
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
-      <a href="/posts">
+      <a href="/blog">
         <h1
           class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
         >
@@ -42,17 +42,29 @@ const posts = await getPosts();
       </p>
     </Container>
   </SectionHeader>
-  <div class="mx-auto px-6 container mt-12 lg:px-0">
+  <div
+    class="mx-auto px-6 grid grid-cols-1 container mt-12 lg:px-0 lg:grid-cols-12"
+  >
     {
       posts.map((p) => (
-        <div class="max-w-3xl mx-auto relative">
-          <a href={`/posts/${p.id}`}>
-            <h2 class="text-4xl font-semibold">
+        <div class="col-span-1 lg:col-span-4 relative hover:text-gray-600">
+          <Image
+            src={p.data.headerImage}
+            width="900"
+            height="450"
+            class="rounded-2xl mb-4"
+            alt={p.data.headerAlt}
+          />
+          <span class="text-sm uppercase">
+            Published On: <time>{formatDate(p.data.pubDate)}</time>
+          </span>
+          <a href={`/blog/${p.id}`}>
+            <h2 class="text-2xl lg:text-3xl mt-2 font-semibold">
               <span class="absolute w-full h-full inset-0" />
               {p.data.title}
             </h2>
           </a>
-          <p class="text-xl mt-4">{p.data.description}</p>
+          <p class="text lg:text-lg mt-4">{p.data.description}</p>
         </div>
       ))
     }

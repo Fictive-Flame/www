@@ -20,6 +20,7 @@ const posts = defineCollection({
       headerImage: image(),
       headerLink: z.string(),
       headerCredit: z.string(),
+      headerAlt: z.string(),
     }),
 });
 
