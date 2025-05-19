@@ -1,7 +1,7 @@
 ---
 title: Why Video Marketing is a Smart Investment
 description: >-
-  Story-driven media humanizes your business, boosts engagement, and creates assets that keep delivering value. In an age of short attention spans and saturated feeds, nothing else is more valuable.
+  Story-driven media humanizes your business, boosts engagement, and creates assets that keep delivering value. In an age of short attention spans and saturated feeds, documentary filmmaking is the answer.
 slug: why-video-marketing-is-a-smart-investment
 pubDate: 2025-05-19
 headerImage: ./header.jpg
