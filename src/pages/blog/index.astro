@@ -23,6 +23,7 @@ const posts = await getPosts();
 <Layout
   title={`Blog`}
   description={`Education, insight, and behind-the-scenes content from a video production company.`}
+  image={posts[0].data.headerImage.src}
 >
   <Nav />
   <SectionHeader>
