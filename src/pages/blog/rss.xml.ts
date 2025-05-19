@@ -20,5 +20,6 @@ const postsToRSSItems = (posts) =>
     title: data.title,
     description: data.description,
     link: `/blog/${id}`,
+    pubDate: data.pubDate,
     content: rendered.html,
   }));
