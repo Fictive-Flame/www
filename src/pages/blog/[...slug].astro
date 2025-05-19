@@ -39,20 +39,20 @@ const { Content } = await render(entry);
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
       <span
-        class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+        class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-4 lg:mb-6 lg:text-8xl"
       >
         <a href={`/blog/${entry.id}`}>
           <h1 class="text-gray-800 dark:text-gray-300">{title}</h1>
         </a>
       </span>
       <span
-        class="text-sm lg:text-lg uppercase font-semibold antialiased dark:text-gray-400"
+        class="text-sm lg:text-lg uppercase font-semibold text-gray-600 antialiased dark:text-gray-400"
         >Published on:
         <time>{formatDate(pubDate)}</time>
       </span>
     </Container>
   </SectionHeader>
-  <div class="container mx-auto px-6 lg:px-0 mt-12">
+  <div class="container mx-auto px-6 lg:px-0 mt-8">
     <Image
       src={headerImage}
       class="max-h-[600px] w-full object-cover rounded-2xl mb-2"
@@ -65,7 +65,7 @@ const { Content } = await render(entry);
       ><a href={headerLink}>{headerCredit}</a></span
     >
   </div>
-  <div class="mx-auto px-6 container mt-12 max-w-3xl lg:px-0">
+  <div class="mx-auto px-6 container mt-8 lg:mt-12 max-w-3xl lg:px-0">
     <Prose>
       <Content />
     </Prose>
