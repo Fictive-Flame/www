@@ -4,11 +4,10 @@ description: >-
   Story-driven media humanizes your business, boosts engagement, and creates assets that keep delivering value. In an age of short attention spans and saturated feeds, nothing else is more valuable.
 slug: why-video-marketing-is-a-smart-investment
 pubDate: 2025-05-19
-image:
-  file: ./header.jpg
-  link: https://unsplash.com/photos/woman-sitting-on-armless-chair-with-light-between-bookcases-in-room-4siwRamtFAk
-  alt: Woman sitting in front of bookcases in a comfortable chair, with lights, cameras, and microphones surrounding her as the interview subject.
-  credit: Photo by Sam McGhee on Unsplash
+headerImage: ./header.jpg
+headerAlt: Woman sitting in front of bookcases in a comfortable chair, with lights, cameras, and microphones surrounding her as the interview subject.
+headerCredit: Photo by Sam McGhee on Unsplash
+headerLink: https://unsplash.com/photos/woman-sitting-on-armless-chair-with-light-between-bookcases-in-room-4siwRamtFAk
 
 ---
 

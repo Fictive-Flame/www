@@ -7,7 +7,7 @@ import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
 import { getPosts, getPost, formatDate } from "../../utils/data";
 
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -22,7 +22,15 @@ interface Props {
 }
 
 const entry = await getPost(Astro.params.slug);
-const { title, description, pubDate, image } = entry.data;
+const {
+  title,
+  description,
+  pubDate,
+  headerAlt,
+  headerImage,
+  headerCredit,
+  headerLink,
+} = entry.data;
 const { Content } = await render(entry);
 ---
 
@@ -33,7 +41,7 @@ const { Content } = await render(entry);
       <span
         class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
       >
-        <a href="/blog">
+        <a href={`/posts/${entry.id}`}>
           <h1 class="text-gray-800 dark:text-gray-400">{title}</h1>
         </a>
       </span>
@@ -46,12 +54,15 @@ const { Content } = await render(entry);
   </SectionHeader>
   <div class="container mx-auto px-6 lg:px-0 mt-12">
     <Image
-      src={image.file.src}
+      src={headerImage}
       class="max-h-[600px] w-full object-cover rounded-2xl mb-2"
-      alt={image.alt ? image.alt : "Header image for this blog entry"}
+      alt={headerAlt ? headerAlt : "Header image for this blog entry"}
+      width="1920"
+      height="600"
+      inferSize={true}
     />
     <span class="text-sm text-gray-400"
-      ><a href={image.link}>{image.credit}</a></span
+      ><a href={headerLink}>{headerCredit}</a></span
     >
   </div>
   <div class="mx-auto px-6 container mt-12 max-w-3xl lg:px-0">

@@ -17,12 +17,9 @@ const posts = defineCollection({
       description: z.string(),
       pubDate: z.date(),
       slug: z.string().optional(),
-      image: z.object({
-        file: image(),
-        link: z.string(),
-        credit: z.string(),
-        alt: z.string().optional(),
-      }),
+      headerImage: image(),
+      headerLink: z.string(),
+      headerCredit: z.string(),
     }),
 });
 
