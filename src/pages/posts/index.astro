@@ -1,0 +1,61 @@
+---
+import Layout from "../../components/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import Container from "../../components/Container.astro";
+import Prose from "../../components/Prose.astro";
+import Footer from "../../components/Footer.astro";
+import { getPosts, getPost, formatDate } from "../../utils/data";
+
+import { Image, getImage } from "astro:assets";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  return (await getPosts()).map(({ id, data }) => ({
+    props: { ...data },
+    params: { slug: id || data.slug },
+  }));
+}
+
+const posts = await getPosts();
+---
+
+<Layout
+  title={`Blog`}
+  description={`Education, insight, and behind-the-scenes content from a video production company.`}
+>
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0"]}>
+      <a href="/posts">
+        <h1
+          class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+        >
+          Blog
+        </h1>
+      </a>
+      <p
+        class="text-2xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-3xl lg:max-w-6xl"
+      >
+        Education, insight, and behind-the-scenes content from the team at
+        Fictive Flame.
+      </p>
+    </Container>
+  </SectionHeader>
+  <div class="mx-auto px-6 container mt-12 lg:px-0">
+    {
+      posts.map((p) => (
+        <div class="max-w-3xl mx-auto relative">
+          <a href={`/posts/${p.id}`}>
+            <h2 class="text-4xl font-semibold">
+              <span class="absolute w-full h-full inset-0" />
+              {p.data.title}
+            </h2>
+          </a>
+          <p class="text-xl mt-4">{p.data.description}</p>
+        </div>
+      ))
+    }
+  </div>
+  <Footer />
+</Layout>
