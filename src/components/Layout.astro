@@ -33,6 +33,12 @@ const { title, classes, description, image } = Astro.props;
         <title>Fictive Flame Media</title>
       )
     }
+    <link
+      rel="alternate"
+      title="Blog Entries"
+      type="application/rss+xml"
+      href="/blog/rss.xml"
+    />
     <script
       defer
       src="https://cloud.umami.is/script.js"
