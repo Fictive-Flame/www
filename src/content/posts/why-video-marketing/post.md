@@ -7,6 +7,7 @@ pubDate: 2025-05-19
 image:
   file: ./header.jpg
   link: https://unsplash.com/photos/woman-sitting-on-armless-chair-with-light-between-bookcases-in-room-4siwRamtFAk
+  alt: Woman sitting in front of bookcases in a comfortable chair, with lights, cameras, and microphones surrounding her as the interview subject.
   credit: Photo by Sam McGhee on Unsplash
 
 ---

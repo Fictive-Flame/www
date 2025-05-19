@@ -21,6 +21,7 @@ const posts = defineCollection({
         file: image(),
         link: z.string(),
         credit: z.string(),
+        alt: z.string().optional(),
       }),
     }),
 });

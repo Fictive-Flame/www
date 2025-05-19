@@ -6,6 +6,8 @@ import Container from "../../components/Container.astro";
 import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
 import { getPosts, getPost, formatDate } from "../../utils/data";
+
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -43,9 +45,10 @@ const { Content } = await render(entry);
     </Container>
   </SectionHeader>
   <div class="container mx-auto px-6 lg:px-0 mt-12">
-    <img
+    <Image
       src={image.file.src}
       class="max-h-[600px] w-full object-cover lg:rounded-2xl mb-2"
+      alt={image.alt ? image.alt : "Header image for this blog entry"}
     />
     <span class="text-sm text-gray-400"
       ><a href={image.link}>{image.credit}</a></span
