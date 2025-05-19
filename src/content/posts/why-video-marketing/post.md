@@ -27,7 +27,7 @@ The data is clear: video content gets more engagement across platforms. Websites
 
 It's not just about flashy visuals, though. The goal is to deliver a message in a memorable, human way. A team like ours understands how to combine visuals, sound, story, and pacing into a package that will tell your story effectively and convert viewers into customers.
 
-## Evergreen Value: A Marketing Asset That Lasts
+## Evergreen Value: Creating Marketing Assets That Last
 
 Unlike a single social media post or ad, a well-produced story-oriented video can be repurposed across multiple platforms and reused over time. Your origin story, an explainer video for a frequently asked question, or a customer success story doesn't age overnight. These pieces are evergreen, and can live on your website, appear in email campaigns, be pinned to social profiles, or shown at events until you need to update them.
 
