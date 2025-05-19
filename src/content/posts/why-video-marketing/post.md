@@ -1,7 +1,14 @@
 ---
 title: Why Video Marketing is a Smart Investment
+description: >-
+  Story-driven media humanizes your business, boosts engagement, and creates assets that keep delivering value. In an age of short attention spans and saturated feeds, nothing else is more valuable.
 slug: why-video-marketing-is-a-smart-investment
 pubDate: 2025-05-19
+image:
+  file: ./header.jpg
+  link: https://unsplash.com/photos/woman-sitting-on-armless-chair-with-light-between-bookcases-in-room-4siwRamtFAk
+  credit: Photo by Sam McGhee on Unsplash
+
 ---
 
 In today's crowded landscape, standing out is more difficult than ever. It requires more than just a great product or service: it requires authentic, human storytelling. One of the most powerful ways to share your story is through video.
@@ -18,22 +25,22 @@ Whether it's the story of how your business started, behind-the-scenes moments, 
 
 The data is clear: video content gets more engagement across platforms. Websites with video content are more likely to rank higher in search results, and social posts with video see significantly higher interaction rates. According to HubSpot, adding a video to a landing page can increase conversion by up to 80%.
 
-It's not just about flashy visuals, though. The goal is to deliver a message in a memorable, human way. A professional videographer understands how to combine visuals, sound, story, and pacing to tell your story effectively and convert viewers into customers.
+It's not just about flashy visuals, though. The goal is to deliver a message in a memorable, human way. A professional videographer understands how to combine visuals, sound, story, and pacing into a package that will tell your story effectively and convert viewers into customers.
 
 ## 3. Evergreen Value: A Marketing Asset That Lasts
 
-Unlike a single social media post or ad, a well-produced story-oriented video can be repurposed across multiple platforms and reused over time. Your origin story, an explainer video for a frequently asked question, or a customer success story doesn't agent overnight. These pieces are evergreen, and can live on your website, appear in email campaigns, be pinned to social profiles, or shown at events until you need to update them.
+Unlike a single social media post or ad, a well-produced story-oriented video can be repurposed across multiple platforms and reused over time. Your origin story, an explainer video for a frequently asked question, or a customer success story doesn't age overnight. These pieces are evergreen, and can live on your website, appear in email campaigns, be pinned to social profiles, or shown at events until you need to update them.
 
 Think of it as building a content library that keeps working for you long after it's created.
 
 ## 4. Efficiency and Credibility
 
-Against a backdrop of DIY content, high-quality videos stand out. While it's possible to shoot decent video on your phone, our team here at Fictive Flame brings experience in lighting, audio, editing, and storytelling that will elevate your work.
+Against a backdrop of DIY content, high-quality videos stand out. While it's possible to shoot decent video on your phone, our team here at Fictive Flame brings experience in lighting, audio, editing, and storytelling that will elevate your work to new heights.
 
-When you hire us here at Fictive Flame, you're not just getting someone who presses record. We become your partner, helping to plan, schedule, and execute a cohesive content strategy. That'll help you stay consistent in messaging, tone, and visual style&mdash;which in turn, saves time and energy, allowing you to focus on what you do best.
+When you hire us, you're not just getting someone who presses record. We become your partner, helping to plan, schedule, and execute a cohesive content strategy. That'll help you stay consistent in messaging, tone, and visual style&mdash;which in turn, saves time and energy, allowing you to focus on what you do best.
 
 ---
 
-### Ready to tell your story?
+### Ready to Share Your Story?
 
 If you’ve been thinking about adding video to your marketing toolkit, now is the time. Whether it’s your first brand video or a series of customer testimonials, our team is ready to bring your dreams to life. Fill out the form below and we'll be in touch.

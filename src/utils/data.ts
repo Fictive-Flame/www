@@ -19,6 +19,14 @@ export async function getPost(id) {
   return await getEntry("posts", id);
 }
 
+export function formatDate(input) {
+  return new Date(input).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  });
+}
+
 export function slugify(input: string): string {
   input = input.replace(/^\s+|\s+$/g, "");
   input = input.toLowerCase();

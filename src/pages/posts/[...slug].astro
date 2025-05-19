@@ -5,7 +5,7 @@ import SectionHeader from "../../components/SectionHeader.astro";
 import Container from "../../components/Container.astro";
 import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
-import { getPosts, getPost } from "../../utils/data";
+import { getPosts, getPost, formatDate } from "../../utils/data";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -20,11 +20,11 @@ interface Props {
 }
 
 const entry = await getPost(Astro.params.slug);
-const { title } = entry.data;
+const { title, description, pubDate, image } = entry.data;
 const { Content } = await render(entry);
 ---
 
-<Layout title={`Blog`}>
+<Layout title={title} description={description}>
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
@@ -35,8 +35,22 @@ const { Content } = await render(entry);
           <h1 class="text-gray-800 dark:text-gray-400">{title}</h1>
         </a>
       </span>
+      <span
+        class="text-lg uppercase font-semibold antialiased dark:text-gray-400"
+        >Published on:
+        <time>{formatDate(pubDate)}</time>
+      </span>
     </Container>
   </SectionHeader>
+  <div class="container mx-auto px-6 lg:px-0 mt-12">
+    <img
+      src={image.file.src}
+      class="max-h-[600px] w-full object-cover lg:rounded-2xl mb-2"
+    />
+    <span class="text-sm text-gray-400"
+      ><a href={image.link}>{image.credit}</a></span
+    >
+  </div>
   <div class="mx-auto px-6 container mt-12 max-w-3xl lg:px-0">
     <Prose>
       <Content />
