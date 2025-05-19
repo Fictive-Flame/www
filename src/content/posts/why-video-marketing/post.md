@@ -17,7 +17,7 @@ If you're a business owner, hiring a professional videographer might seem like a
 
 ## Story-driven Content Builds Trust
 
-People don't buy products&mdash;they buy stories. They want to know *why* you do the work, not just *what* you sell. A skilled videographer can help craft a compelling narrative that resonates with your audience. Our documentary-inspired process at Fictive Flame is designed around this concept, because nobody else has walked the same path as you.
+People don't buy products&mdash;they buy stories. They want to know *why* you do the work, not just *what* you sell. A skilled interviewer can help craft a compelling narrative that resonates with your audience. Our documentary-inspired process at Fictive Flame is designed around this concept, because nobody else has walked the same path as you.
 
 Whether it's the story of how your business started, behind-the-scenes moments, or customer testimonials, story-focused media builds an emotional connection; transforming you into a trusted community resource for current and would-be customers.
 
@@ -25,7 +25,7 @@ Whether it's the story of how your business started, behind-the-scenes moments, 
 
 The data is clear: video content gets more engagement across platforms. Websites with video content are more likely to rank higher in search results, and social posts with video see significantly higher interaction rates. According to HubSpot, adding a video to a landing page can increase conversion by up to 80%.
 
-It's not just about flashy visuals, though. The goal is to deliver a message in a memorable, human way. A professional videographer understands how to combine visuals, sound, story, and pacing into a package that will tell your story effectively and convert viewers into customers.
+It's not just about flashy visuals, though. The goal is to deliver a message in a memorable, human way. A team like ours understands how to combine visuals, sound, story, and pacing into a package that will tell your story effectively and convert viewers into customers.
 
 ## Evergreen Value: A Marketing Asset That Lasts
 
