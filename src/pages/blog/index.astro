@@ -54,7 +54,7 @@ const posts = await getPosts();
             class="rounded-2xl mb-4"
             alt={p.data.headerAlt}
           />
-          <span class="text-sm uppercase">
+          <span class="text-sm uppercase antialiased dark:text-gray-400">
             Published On: <time>{formatDate(p.data.pubDate)}</time>
           </span>
           <a href={`/blog/${p.id}`}>
