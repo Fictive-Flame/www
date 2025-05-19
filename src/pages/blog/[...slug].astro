@@ -42,11 +42,11 @@ const { Content } = await render(entry);
         class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
       >
         <a href={`/blog/${entry.id}`}>
-          <h1 class="text-gray-800 dark:text-gray-400">{title}</h1>
+          <h1 class="text-gray-800 dark:text-gray-300">{title}</h1>
         </a>
       </span>
       <span
-        class="text-lg uppercase font-semibold antialiased dark:text-gray-400"
+        class="text-sm lg:text-lg uppercase font-semibold antialiased dark:text-gray-400"
         >Published on:
         <time>{formatDate(pubDate)}</time>
       </span>
