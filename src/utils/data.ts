@@ -11,6 +11,14 @@ export async function getWorkByCategory(category: string) {
   );
 }
 
+export async function getPosts() {
+  return await getCollection("posts");
+}
+
+export async function getPost(id) {
+  return await getEntry("posts", id);
+}
+
 export function slugify(input: string): string {
   input = input.replace(/^\s+|\s+$/g, "");
   input = input.toLowerCase();

@@ -1,0 +1,46 @@
+---
+import Layout from "../../components/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import Container from "../../components/Container.astro";
+import Prose from "../../components/Prose.astro";
+import Footer from "../../components/Footer.astro";
+import { getPosts, getPost } from "../../utils/data";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  return (await getPosts()).map(({ id, data }) => ({
+    props: { ...data },
+    params: { slug: id || data.slug },
+  }));
+}
+
+interface Props {
+  title: string;
+}
+
+const entry = await getPost(Astro.params.slug);
+const { title } = entry.data;
+const { Content } = await render(entry);
+---
+
+<Layout title={`Blog`}>
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0"]}>
+      <span
+        class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+      >
+        <a href="/blog">
+          <h1 class="text-gray-800 dark:text-gray-400">{title}</h1>
+        </a>
+      </span>
+    </Container>
+  </SectionHeader>
+  <div class="mx-auto px-6 container mt-12 max-w-3xl lg:px-0">
+    <Prose>
+      <Content />
+    </Prose>
+  </div>
+  <Footer />
+</Layout>
