@@ -27,6 +27,14 @@ export function formatDate(input) {
   });
 }
 
+export function postDescending(a, b) {
+  return b.data.pubDate - a.data.pubDate;
+}
+
+export function publishedOnly(a) {
+  return new Date(a.data.pubDate) < new Date();
+}
+
 export function slugify(input: string): string {
   input = input.replace(/^\s+|\s+$/g, "");
   input = input.toLowerCase();

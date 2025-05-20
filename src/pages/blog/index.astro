@@ -4,8 +4,12 @@ import Nav from "../../components/Nav.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import Container from "../../components/Container.astro";
 import Footer from "../../components/Footer.astro";
-import { getPosts, formatDate } from "../../utils/data";
-
+import {
+  getPosts,
+  publishedOnly,
+  postDescending,
+  formatDate,
+} from "../../utils/data";
 import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
@@ -15,9 +19,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const posts = (await getPosts()).sort(
-  (a, b) => b.data.pubDate - a.data.pubDate,
-);
+const posts = (await getPosts()).filter(publishedOnly).sort(postDescending);
 ---
 
 <Layout

@@ -1,10 +1,8 @@
 import rss from "@astrojs/rss";
-import { getPosts } from "../../utils/data";
+import { getPosts, publishedOnly, postDescending } from "../../utils/data";
 
 export async function GET(ctx) {
-  const posts = (await getPosts()).sort(
-    (a, b) => b.data.pubDate - a.data.pubDate,
-  );
+  const posts = (await getPosts()).filter(publishedOnly).sort(postDescending);
 
   return rss({
     title: `Fictive Flame Blog`,

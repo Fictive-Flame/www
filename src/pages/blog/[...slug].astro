@@ -5,13 +5,13 @@ import SectionHeader from "../../components/SectionHeader.astro";
 import Container from "../../components/Container.astro";
 import Prose from "../../components/Prose.astro";
 import Footer from "../../components/Footer.astro";
-import { getPosts, getPost, formatDate } from "../../utils/data";
+import { getPosts, publishedOnly, getPost, formatDate } from "../../utils/data";
 
 import { Image } from "astro:assets";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  return (await getPosts()).map(({ id, data }) => ({
+  return (await getPosts()).filter(publishedOnly).map(({ id, data }) => ({
     props: { ...data },
     params: { slug: id || data.slug },
   }));
