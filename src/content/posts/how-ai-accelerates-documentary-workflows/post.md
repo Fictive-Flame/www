@@ -46,7 +46,7 @@ For investigative or explanatory films, AI becomes a research partner, uncoverin
 
 ---
 
-Tools are never the problem, how we use them is. Viewed though that lens, AI isn't about cutting corners or taking creative shortcuts; it's about clearing entirely new paths by automating the most repetitive tasks. AI can give back valuable time, needed for storytellers to do their best work: that is, transforming human experiences into emotional narratives.
+Tools are never the problem, how we use them is. Viewed though that lens, AI isn't about taking shortcuts: it's clearing entirely new paths by automating the most repetitive tasks. AI can give back valuable time, needed for storytellers to do their best work: that is, transforming human experiences into emotional narratives.
 
 While AI will never be able to capture a sunrise at a specific time or wait for the right moment in an interview, it can be a valued technical asset. For smaller production companies, this push can mean the difference between finishing a project or shelving it indefinitely.
 
