@@ -4,8 +4,12 @@ import Nav from "../../components/Nav.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import Container from "../../components/Container.astro";
 import Footer from "../../components/Footer.astro";
-import { getPosts, formatDate } from "../../utils/data";
-
+import {
+  getPosts,
+  publishedOnly,
+  postDescending,
+  formatDate,
+} from "../../utils/data";
 import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
@@ -15,7 +19,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const posts = await getPosts();
+const posts = (await getPosts()).filter(publishedOnly).sort(postDescending);
 ---
 
 <Layout
@@ -42,16 +46,16 @@ const posts = await getPosts();
     </Container>
   </SectionHeader>
   <div
-    class="mx-auto px-6 grid grid-cols-1 container mt-12 lg:px-0 lg:grid-cols-12"
+    class="mx-auto px-6 grid grid-cols-1 container mt-12 lg:px-0 lg:grid-cols-12 lg:gap-12"
   >
     {
       posts.map((p) => (
         <div class="col-span-1 lg:col-span-4 relative dark:text-gray-300 hover:text-gray-600">
           <Image
             src={p.data.headerImage}
-            width="900"
-            height="450"
-            class="rounded-2xl mb-4"
+            width="500"
+            height="100"
+            class="rounded-2xl mb-4 max-h-52 object-cover"
             alt={p.data.headerAlt}
           />
           <span class="text-sm uppercase antialiased dark:text-gray-400">

@@ -15,7 +15,7 @@ In today's crowded landscape, standing out is more difficult than ever. It requi
 
 If you're a business owner, hiring a professional videographer might seem like a luxury. In reality, it can be one of the most effective long-term content marketing investments you can make. Here's why.
 
-## Story-driven Content Builds Trust
+## Story-Driven Content Builds Trust
 
 People don't buy products&mdash;they buy stories. They want to know *why* you do the work, not just *what* you sell. A skilled interviewer can help craft a compelling narrative that resonates with your audience. Our documentary-inspired process at Fictive Flame is designed around this concept, because nobody else has walked the same path as you.
 
