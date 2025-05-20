@@ -20,9 +20,9 @@ Let's explore how using AI at Fictive Flame allows us to move faster, work smart
 
 One of the most tedious stages in the post-production workflow is ingesting and organizing hours&mdash;or even hundreds of hours&mdash;of raw footage. Adding to the chaos, some of this footage is archival, while the remaining portion is from different cameras that were used on the shoots.
 
-If you start the edit with all of these assets in your media bin, the resulting project will be better than if you didn't. This is where AI can help, by automating transcription, facial recognition, object tagging, and scene detection; all of which make footage easier to search and assemble into the final timeline.
+If you start the edit with all of these assets in your media bin, the resulting project will be better than if you didn't. Yet, it's still very common to take a short-cut around this type of pre-production task, slowly adding footage to the timeline as it becomes available. This is where AI can help, by automating transcription, facial recognition, object tagging, and scene detection; all of which make footage easier to search and assemble into the final timeline.
 
-Instead of manually scrubbing through clips to find a key quote, AI can highlight it in seconds. This allows editors and directors to spend more time on creative decisions and less on logistical ones.
+Instead of manually scrubbing through clips to find a key quote, AI can highlight it in seconds. Footage is cataloged and available at the press of a button. This allows editors and directors to spend more time on creative decisions and less on logistical ones.
 
 ## Automated Transcription and Translation
 
