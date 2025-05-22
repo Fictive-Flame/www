@@ -10,6 +10,8 @@ import { getPosts, publishedOnly, getPost, formatDate } from "../../utils/data";
 import { Image } from "astro:assets";
 import { render } from "astro:content";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   return (await getPosts()).filter(publishedOnly).map(({ id, data }) => ({
     props: { ...data },
