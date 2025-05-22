@@ -10,6 +10,7 @@ const site = import.meta.env.CF_PAGES_URL || "https://fictiveflame.co";
 // https://astro.build/config
 export default defineConfig({
   site,
+  output: "server",
   vite: { plugins: [tailwind()] },
   integrations: [sitemap(), alpine()],
   adapter: cloudflare(),
