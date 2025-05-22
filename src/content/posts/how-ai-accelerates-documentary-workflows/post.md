@@ -32,7 +32,7 @@ Whether you're producing a film with global interviews or repurposing content fo
 
 ## Real-Time Collaboration and Remote Production
 
-With AI-driven platforms that support cloud workflows, production teams scattered across time zones can collaborate in real-time. Platforms like Blackmagic Cloud and Frame.io can synchronize transcripts, label footage, and update project changes across collaborators instantly, speeding up communication and reducing redundancies.
+With AI-driven platforms that support cloud workflows, production teams scattered across time zones can collaborate in real-time. Platforms like Blackmagic Cloud and Frame.io can synchronize transcripts, label footage, and update project changes across collaborators instantly, which speeds up communication.
 
 AI can also analyze footage for tone, pacing, and visual patterns, offering intelligent suggestions on cuts or transitions. Some tools even create rough assembly edits automatically, which serve as starting points for editors. This is becoming increasingly clear every day with tools like the new DaVinci Resolve 20, which supports many of these tools out of the box.
 
