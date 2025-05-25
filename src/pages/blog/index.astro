@@ -53,9 +53,9 @@ const posts = (await getPosts()).filter(publishedOnly).sort(postDescending);
         <div class="col-span-1 mb-8 lg:mb-0 lg:col-span-4 relative dark:text-gray-300 hover:text-gray-600">
           <Image
             src={p.data.headerImage}
-            width="500"
-            height="100"
-            class="rounded-2xl mb-4 max-h-52 object-cover"
+            width="600"
+            height="200"
+            class="rounded-2xl mb-4 max-h-40 object-cover"
             alt={p.data.headerAlt}
           />
           <span class="text-sm uppercase antialiased dark:text-gray-400">
