@@ -1,6 +1,7 @@
 ---
 title: "Sanitas Brewing: Craft and Process"
 type: series
+pubDate: 2025-02-07
 description: >-
   For over a decade, Sanitas Brewing has been crafting innovative ales in the craft beer capital of Boulder, Colorado. In this exclusive podcast interview, host Nicholas Young gets the full story behind the beer.
 categories:

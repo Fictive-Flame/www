@@ -1,6 +1,7 @@
 ---
 title: "Spell Books: Craft and Process"
 type: series
+pubDate: 2025-02-01
 description: >-
   At 800 square feet, Spell Books is missing much of the usual space of a bookstore. However, for what they lack in area, they make up for in personality.
 categories:

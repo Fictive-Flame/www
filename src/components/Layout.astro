@@ -35,6 +35,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       )
     }
     {canonical && <link rel="canonical" href={canonical} />}
+    <slot name="structured-data" />
     <link
       rel="alternate"
       title="Blog Entries"

@@ -1,5 +1,6 @@
 ---
 import Layout from "../../components/Layout.astro";
+import VideoStructuredData from "../../components/VideoStructuredData.astro";
 import Nav from "../../components/Nav.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import Container from "../../components/Container.astro";
@@ -18,11 +19,18 @@ export async function getStaticPaths() {
 }
 
 const {
-  data: { title, description, poster, media, categories },
+  data: { title, pubDate, description, poster, media, categories },
 } = Astro.props;
+
+const structuredData = {
+  name: title,
+  thumbnailUrl: poster,
+  uploadDate: pubDate,
+};
 ---
 
 <Layout title={title}>
+  <VideoStructuredData data={structuredData} slot="structured-data" />
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>

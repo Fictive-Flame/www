@@ -1,6 +1,7 @@
 ---
 title: "On the Fence Kombucha: Craft and Process"
 type: series
+pubDate: 2025-03-21
 description: >-
   Kombucha is a drink as varied as the people who consume it. In this episode of Craft and Process (produced by Fictive Flame) we explore the world of non-alcoholic fermentation.
 categories:

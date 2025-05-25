@@ -3,6 +3,7 @@ title: "Earth at Play: the Art of Pottery"
 description: >-
   Go behind the scenes with potter and owner of Nanner Boots Pottery, Anna Feldman, in this short documentary filmed in her studio.
 type: feature
+pubDate: 2024-02-02
 categories:
   - Mini Doc
   - Documentary
