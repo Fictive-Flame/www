@@ -7,9 +7,10 @@ interface Props {
   description?: string;
   classes?: [string];
   image?: string;
+  canonical?: URL;
 }
 
-const { title, classes, description, image } = Astro.props;
+const { title, classes, description, image, canonical } = Astro.props;
 ---
 
 <html lang="en">
@@ -33,6 +34,7 @@ const { title, classes, description, image } = Astro.props;
         <title>Fictive Flame Media</title>
       )
     }
+    {canonical && <link rel="canonical" href={canonical} />}
     <link
       rel="alternate"
       title="Blog Entries"

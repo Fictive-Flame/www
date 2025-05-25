@@ -47,11 +47,14 @@ const media = {
     ],
   },
 };
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <Layout
   title="Services"
   description="Video strategy, live streaming, production, and visual design. Come explore our world."
+  canonical={canonicalURL}
 >
   <Nav />
   <SectionHeader>
