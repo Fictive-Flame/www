@@ -10,10 +10,9 @@ import { getWork, getWorkCategories, slugify } from "../../utils/data";
 
 const work = await getWork();
 const categories = getWorkCategories(work);
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
-<Layout title="Featured Work" canonical={canonicalURL}>
+<Layout title="Featured Work">
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>

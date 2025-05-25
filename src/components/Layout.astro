@@ -7,10 +7,10 @@ interface Props {
   description?: string;
   classes?: [string];
   image?: string;
-  canonical?: URL;
 }
 
-const { title, classes, description, image, canonical } = Astro.props;
+const { title, classes, description, image } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html lang="en">
