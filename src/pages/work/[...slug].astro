@@ -24,11 +24,15 @@ const {
 
 const structuredData = {
   name: title,
+  description,
   thumbnailUrl: poster,
   uploadDate: pubDate,
-  productionCompany: "Fictive Flame Media",
-  abstract: description,
   contentUrl: media[0].src,
+  productionCompany: {
+    name: "Fictive Flame Media",
+    url: `https://fictiveflame.co`,
+    email: "hello@fictiveflame.co",
+  },
 };
 ---
 
