@@ -11,6 +11,12 @@ interface Props {
 
 const { title, classes, description, image } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+Astro;
+
+const printTitle =
+  Astro.url.pathname === "/"
+    ? `Fictive Flame Media | ${title}`
+    : `${title} | Fictive Flame Media`;
 ---
 
 <html lang="en">
@@ -27,13 +33,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       )
     }
     {description && <meta name="description" content={description} />}
-    {
-      title ? (
-        <title>{title} | Fictive Flame Media</title>
-      ) : (
-        <title>Fictive Flame Media</title>
-      )
-    }
+    <title>{printTitle}</title>
     {canonical && <link rel="canonical" href={canonical} />}
     <slot name="structured-data" />
     <link
