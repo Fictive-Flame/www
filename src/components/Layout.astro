@@ -24,7 +24,7 @@ const printTitle =
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-17137403373"></script>
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -32,6 +32,7 @@ const printTitle =
       gtag("js", new Date());
       gtag("config", "AW-17137403373");
     </script>
+    <slot name="google-tracking" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
