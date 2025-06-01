@@ -1,8 +1,11 @@
 ---
+import { getImage } from "astro:assets";
 import { workUrlFor } from "../utils/data";
 const {
   data: { title, poster, preview },
 } = Astro.props;
+
+const resized = await getImage({ src: poster, width: 800, height: 600 });
 ---
 
 <div class="overflow-hidden relative h-[500px]">
@@ -25,7 +28,7 @@ const {
     loop
     muted
     playsinline
-    poster={poster}
+    poster={resized.src}
     class="absolute inset-0 z-10 h-full w-full object-cover"
   >
     {preview.map((p) => <source src={p.src} type={p.type} />)}
