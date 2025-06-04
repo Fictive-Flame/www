@@ -3,11 +3,12 @@ import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
+import poster from "../assets/bg-poster.jpg";
 ---
 
 <Layout
-  title="Lights. Camera. Loyalty."
-  description="Colorado-based filmmakers, engaging stories. Ignite your brand."
+  title="Denver's Video Experts"
+  description="Colorado-based filmmakers telling engaging stories. Ignite your brand."
   classes={["font-humanist"]}
 >
   <Nav />
@@ -65,7 +66,7 @@ import Footer from "../components/Footer.astro";
       loop
       muted
       playsinline
-      poster="https://storage.fictiveflame.co/background-hd-poster.jpg"
+      poster={poster.src}
       class="absolute z-10 inset-0 h-full w-full object-cover"
     >
       <source
