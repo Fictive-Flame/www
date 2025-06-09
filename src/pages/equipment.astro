@@ -16,7 +16,10 @@ const { Content } = await render(entry);
 const equipment = entry.data.equipment.length ? entry.data.equipment : [];
 ---
 
-<Layout>
+<Layout
+  title="Equipment List"
+  description="Gear isn't everything, but these tools help us get the job done."
+>
   <Nav />
   <SectionHeader>
     <Container classes={["px-6", "lg:px-0"]}>
@@ -48,6 +51,5 @@ const equipment = entry.data.equipment.length ? entry.data.equipment : [];
       }
     </div>
   </div>
-
   <Footer />
 </Layout>
