@@ -36,6 +36,7 @@ equipment:
     entries:
       - Prompter People 13" Teleprompter
       - Remote Script Management Software
+      - 75' Long-range fiber optic HDMI cables (2)
       - Blackmagic Design ATEM 1 M/E Constellation UHD Video Production Switcher
   - heading: Audio Reproduction
     entries:
