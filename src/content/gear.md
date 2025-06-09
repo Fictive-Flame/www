@@ -4,13 +4,14 @@ slug: equipment
 equipment:
   - heading: Cameras
     entries:
-      - Sony FX3 10-bit, 4:2:2 Digital Cinema Camera (with cage)
-      - Sony FX30 10-bit, 4:2:2 Digital Cinema Camera (with cage)
+      - Sony FX3 10-bit, 4:2:2 Digital Cinema camera (with cage)
+      - Sony FX30 10-bit, 4:2:2 Digital Cinema camera (with cage)
   - heading: Lenses
     entries:
-      - Sony 24-70 2.8 GM II
+      - Sony 24-70 FF 2.8 GM II
       - Sigma 18-55 2.8 DC DN (with 82mm step up ring)
-      - NiSi TrueColor 1-5 ND 82mm (2)
+      - NiSi TrueColor 1-5 82mm ND filter (2)
+      - Tiffen 2-8 82mm ND filter
   - heading: Aircraft
     entries:
       - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
@@ -19,7 +20,9 @@ equipment:
   - heading: Capture and Sync
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
-      - Tentacle Sync E Timecode Generator (3)
+      - Tentacle Sync E Mark II timecode generator (3)
+      - Tentacle Sync Track E lavalier microphone and recorder
+      - Zoom F6 6-Input / 14-Track Field Recorder
   - heading: Lighting
     entries:
       - Amaran 200x S Bicolor 200W COB Monolight
@@ -28,19 +31,17 @@ equipment:
       - Amaran T40C 40W RGBWW LED Tube (3)
       - Amaran Infinibar PB6 2' Tunable LED Pixel Bar
       - 4' White/Gold/Silver light bounce disc
-  - heading: Microphones and Recorders
+  - heading: Microphones
     entries:
       - Heil Sound PR-40 Large Diaphragm Dynamic (2x)
       - Heil Sound PR-30 Large Diaphragm Dynamic
       - Rode NTG-2 Shotgun
-      - Tentacle Sync Track E Lavalier
-      - Zoom F6 6-Input / 14-Track Field Recorder
   - heading: Live Events and Support
     entries:
       - Prompter People 13" Teleprompter
       - Remote Script Management Software
       - 75' Long-range fiber optic HDMI cables (2)
-      - Blackmagic Design ATEM 1 M/E Constellation UHD Video Production Switcher
+      - Blackmagic Design ATEM 1 M/E Constellation UHD video switcher
   - heading: Audio Reproduction
     entries:
       - Adam Audio A7V Nearfield Studio Monitor (2)
@@ -55,8 +56,10 @@ equipment:
       - Apple MacBook Pro M3 Max (128GB)
   - heading: Power
     entries:
-       - Smallrig VB99 99wh Battery
-       - Smallrig VB99 Pro 99wh Battery (2)
+       - Smallrig VB99 99wh battery
+       - Smallrig VB99 Pro 99wh battery (2)
+       - Sony NP-F battery (6)
+
 ---
 
 We know gear isn't everything, but it does help you accomplish the goal of crafting a professional look. Below are a few tools of our trade.
