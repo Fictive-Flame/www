@@ -29,7 +29,7 @@ equipment:
       - Godox 35" softbox with grid
       - Amaran P60C 60W RGBWW LED Panels with softbox and grid (2)
       - Amaran T40C 40W RGBWW LED Tube (3)
-      - Amaran Infinibar PB6 2' Tunable LED Pixel Bar
+      - Aputure Infinibar PB6 2' Tunable LED Pixel Bar
       - 4' White/Gold/Silver light bounce disc
   - heading: Microphones
     entries:
