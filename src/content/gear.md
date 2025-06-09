@@ -13,7 +13,9 @@ equipment:
       - NiSi TrueColor 1-5 ND 82mm (2)
   - heading: Aircraft
     entries:
-      - DJI Mavic 3 Pro (FAA Registered, Part 107 Compliant)
+      - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
+      - GEPRC Cinelog 30 v3, DJI O4 Pro Sub-250g FPV (Under Development)
+      - RadioMaster GX12 Transmitter
   - heading: Capture and Sync
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
