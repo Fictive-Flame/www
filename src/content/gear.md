@@ -26,12 +26,13 @@ equipment:
       - Amaran T40C 40W RGBWW LED Tube (3)
       - Amaran Infinibar PB6 2' Tunable LED Pixel Bar
       - 4' White/Gold/Silver light bounce disc
-  - heading: Microphones
+  - heading: Microphones and Recorders
     entries:
       - Heil Sound PR-40 Large Diaphragm Dynamic (2x)
       - Heil Sound PR-30 Large Diaphragm Dynamic
       - Rode NTG-2 Shotgun
       - Tentacle Sync Track E Lavalier
+      - Zoom F6 6-Input / 14-Track Field Recorder
   - heading: Live Events and Support
     entries:
       - Prompter People 13" Teleprompter
