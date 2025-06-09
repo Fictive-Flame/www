@@ -16,11 +16,11 @@ equipment:
       - DJI Mavic 3 Pro (FAA Registered, Part 107 Compliant)
   - heading: Capture and Sync
     entries:
-      - Atomos Ninja V+ Ultra ProRes RAW-capable Monitor and Recorder (2)
+      - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
       - Tentacle Sync E Timecode Generator (3)
   - heading: Lighting
     entries:
-      - Amaran 200x S Bi-Color 200W COB Monolight
+      - Amaran 200x S Bicolor 200W COB Monolight
       - Godox 35" softbox with grid
       - Amaran P60C 60W RGBWW LED Panels with softbox and grid (2)
       - Amaran T40C 40W RGBWW LED Tube (3)
