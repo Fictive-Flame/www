@@ -45,8 +45,13 @@ const posts = defineCollection({
     }),
 });
 
+const pages = defineCollection({
+  loader: glob({ pattern: "*.md", base: "src/content" }),
+});
+
 export const collections = {
   work,
   processes,
   posts,
+  pages,
 };

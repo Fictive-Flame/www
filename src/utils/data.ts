@@ -19,6 +19,10 @@ export async function getPost(id) {
   return await getEntry("posts", id);
 }
 
+export async function getPage(id) {
+  return await getEntry("pages", id);
+}
+
 export function formatDate(input) {
   return new Date(input).toLocaleDateString("en-US", {
     year: "numeric",

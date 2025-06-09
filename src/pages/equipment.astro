@@ -1,0 +1,53 @@
+---
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import Container from "../components/Container.astro";
+import Prose from "../components/Prose.astro";
+import Footer from "../components/Footer.astro";
+import { getPage } from "../utils/data";
+import { render } from "astro:content";
+
+export const prerender = true;
+
+const entry = await getPage("equipment");
+const { Content } = await render(entry);
+
+const equipment = entry.data.equipment.length ? entry.data.equipment : [];
+---
+
+<Layout>
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0"]}>
+      <span
+        class="flex text-4xl text-gray-700 dark:text-gray-300 font-bold mb-4 lg:mb-6 lg:text-8xl"
+      >
+        <h1 class="text-gray-800 dark:text-gray-300">{entry.data.title}</h1>
+      </span>
+    </Container>
+  </SectionHeader>
+  <div class="container mx-auto px-6 lg:px-0 mt-8">
+    <Prose>
+      <Content />
+    </Prose>
+    <div class="mt-8">
+      {
+        equipment.map((e) => (
+          <div class="mb-4">
+            <h3 class="text-xl mb-2 font-bold text-gray-700 dark:text-gray-300 uppercase">
+              {e.heading}
+            </h3>
+            <ul class="list-disc ml-4">
+              {(e.entries || []).map((e) => (
+                <li class="py-1">{e}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
