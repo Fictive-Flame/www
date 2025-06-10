@@ -16,7 +16,7 @@ packages:
     description: >-
       The quickest way to establish location is with an aerial shot. Handle it quickly and legally with our photographer flight crew.
     process: >-
-      Filmmaking is an artform, whether that's on the ground or in the sky. We are both skilled videographers and Part 107 certified remote pilots, capable of making sure the mission is safe and all images or video match your high standard.
+      Filmmaking is an artform, whether on the ground or in the sky. We are both skilled videographers and Part 107 certified remote pilots, capable of making sure the mission is safe, compliant, and any resulting images or video match your high standard.
     media:
       - type: video/mp4
         src: https://storage.fictiveflame.co/aerial-imagery.mp4
