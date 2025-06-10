@@ -17,11 +17,11 @@ equipment:
       - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
       - Sub-250g modified GEPRC 3" Cinewhoop with DJI O4 Pro FPV, GPS, and Remote ID (Under Development)
       - RadioMaster GX12 Transmitter
-  - heading: Capture and Sync
+  - heading: Recording and Sync
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
       - Tentacle Sync E Mark II timecode generator (3)
-      - Tentacle Sync Track E lavalier microphone and recorder
+      - Tentacle Sync Track E beltpack recorder
       - Zoom F6 6-Input / 14-Track Field Recorder
   - heading: Lighting
     entries:
@@ -36,6 +36,7 @@ equipment:
       - Heil Sound PR-40 large diaphragm dynamic broadcast microphone (2x)
       - Heil Sound PR-30 large diaphragm dynamic broadcast microphone
       - Rode NTG-2 shotgun microphone
+      - Tentacle Sync lavalier microphone (with screw lock)
   - heading: Live Events and Support
     entries:
       - 25' Rode boom pole
