@@ -36,7 +36,13 @@ const { title, description, process, media } = Astro.props;
     </Container>
   </SectionHeader>
   <div class="mx-auto max-w-6xl mt-12 sm:mt-8 px-6 lg:px-0">
-    <video autoplay loop muted playsinline controls class="rounded-2xl">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="w-full aspect-video rounded-2xl"
+    >
       {media.map((p) => <source src={p.src} type={p.type} />)}
     </video>
   </div>
