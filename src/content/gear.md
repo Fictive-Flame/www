@@ -17,7 +17,7 @@ equipment:
       - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
       - Sub-250g modified GEPRC 3" Cinewhoop with DJI O4 Pro FPV, GPS, and Remote ID (Under Development)
       - RadioMaster GX12 Transmitter
-  - heading: Recording and Sync
+  - heading: Recording and Timecode
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
       - Tentacle Sync E Mark II timecode generator (3)
