@@ -41,7 +41,7 @@ equipment:
     entries:
       - 25' Rode boom pole
       - Prompter People 13" teleprompter with remote script management software
-      - 75' Long-range fiber optic HDMI cables (2)
+      - 75' fiber optic HDMI cables (2)
       - Blackmagic Design ATEM 1 M/E Constellation UHD video switcher
   - heading: Audio Reproduction
     entries:
