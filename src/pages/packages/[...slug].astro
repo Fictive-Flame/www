@@ -35,14 +35,14 @@ const { title, description, process, media } = Astro.props;
       </p>
     </Container>
   </SectionHeader>
-  <div class="mx-auto max-w-6xl mt-12 px-6 lg:px-0">
+  <div class="mx-auto max-w-6xl mt-12 sm:mt-8 px-6 lg:px-0">
     <video autoplay loop muted playsinline controls class="rounded-2xl">
       {media.map((p) => <source src={p.src} type={p.type} />)}
     </video>
   </div>
-  <div class="mt-8">
+  <div class="mt-8 px-6 lg:px-0">
     <p
-      class="dark:text-gray-300 text-xl font-light mx-auto max-w-4xl text-center"
+      class="dark:text-gray-300 text-lg sm:text font-light mx-auto max-w-4xl text-center"
     >
       {process}
     </p>
