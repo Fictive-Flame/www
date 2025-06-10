@@ -2,10 +2,10 @@
 title: Equipment List
 slug: equipment
 equipment:
-  - heading: Cameras
+  - heading: Digital Cinema Cameras
     entries:
-      - Sony FX3 10-bit, 4:2:2 Digital Cinema camera (with cage)
-      - Sony FX30 10-bit, 4:2:2 Digital Cinema camera (with cage)
+      - Sony FX3
+      - Sony FX30
   - heading: Lenses
     entries:
       - Sony 24-70 FF 2.8 GM II
