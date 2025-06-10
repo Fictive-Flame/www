@@ -1,0 +1,51 @@
+---
+import Layout from "../../components/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import Container from "../../components/Container.astro";
+import Footer from "../../components/Footer.astro";
+import { getPage } from "../../utils/data";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const page = await getPage("packages");
+  return (page.data.packages || []).map((p) => ({
+    props: { ...p },
+    params: { slug: p.slug },
+  }));
+}
+
+const { title, description, process, media } = Astro.props;
+---
+
+<Layout title="Services">
+  <Nav />
+  <SectionHeader>
+    <Container classes={["px-6", "lg:px-0", "text-center"]}>
+      <h1
+        class="text-4xl text-gray-800 dark:text-gray-300 font-bold mb-8 lg:text-8xl"
+      >
+        {title}
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-200 font-light antialiased lg:text-3xl lg:max-w-6xl mx-auto"
+      >
+        {description}
+      </p>
+    </Container>
+  </SectionHeader>
+  <div class="mx-auto max-w-6xl mt-12 px-6 lg:px-0">
+    <video autoplay loop muted playsinline controls class="rounded-2xl">
+      {media.map((p) => <source src={p.src} type={p.type} />)}
+    </video>
+  </div>
+  <div class="mt-8">
+    <p
+      class="dark:text-gray-300 text-xl font-light mx-auto max-w-4xl text-center"
+    >
+      {process}
+    </p>
+  </div>
+  <Footer />
+</Layout>
