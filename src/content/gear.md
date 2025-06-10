@@ -25,30 +25,30 @@ equipment:
       - Zoom F6 6-Input / 14-Track Field Recorder
   - heading: Lighting
     entries:
-      - Amaran 200x S Bicolor 200W COB Monolight
+      - Amaran 200xs bicolor 200W COB monolight
       - Godox 35" softbox with grid
-      - Amaran P60C 60W RGBWW LED Panels with softbox and grid (2)
-      - Amaran T40C 40W RGBWW LED Tube (3)
-      - Aputure Infinibar PB6 2' Tunable LED Pixel Bar
+      - Amaran P60C 60W RGBWW LED panels with softbox and grid (2)
+      - Amaran T40C 40W RGBWW LED tube (3)
+      - Aputure Infinibar PB6 2' tunable LED pixel bar
       - 4' White/Gold/Silver light bounce disc
   - heading: Microphones
     entries:
-      - Heil Sound PR-40 Large Diaphragm Dynamic (2x)
-      - Heil Sound PR-30 Large Diaphragm Dynamic
-      - Rode NTG-2 Shotgun
+      - Heil Sound PR-40 large diaphragm dynamic broadcast microphone (2x)
+      - Heil Sound PR-30 large diaphragm dynamic broadcast microphone
+      - Rode NTG-2 shotgun microphone
   - heading: Live Events and Support
     entries:
-      - Prompter People 13" Teleprompter
-      - Remote Script Management Software
+      - 25' Rode boom pole
+      - Prompter People 13" teleprompter with remote script management software
       - 75' Long-range fiber optic HDMI cables (2)
       - Blackmagic Design ATEM 1 M/E Constellation UHD video switcher
   - heading: Audio Reproduction
     entries:
-      - Adam Audio A7V Nearfield Studio Monitor (2)
-      - Adam Audio Sub12 12" Subwoofer (2)
-      - Focusrite Scarlett 18i8 Audio Interface
+      - Adam Audio A7V nearfield studio monitor (2)
+      - Adam Audio Sub12 12" subwoofer (2)
+      - Focusrite Scarlett 18i8 audio interface
       - dbx 266xs Dual Channel Expander/Gate/Compressor
-      - Furman and Middle Atlantic Power Conditioners
+      - Furman and Middle Atlantic power conditioners
   - heading: Displays and Compute
     entries:
       - Apple Pro Display XDR
