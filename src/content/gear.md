@@ -15,7 +15,7 @@ equipment:
   - heading: Aircraft
     entries:
       - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
-      - GEPRC Cinelog 30 v3, DJI O4 Pro Sub-250g FPV with GPS and Remote ID (Under Development)
+      - Sub-250g modified GEPRC 3" Cinelog with DJI O4 Pro FPV, GPS and Remote ID (Under Development)
       - RadioMaster GX12 Transmitter
   - heading: Capture and Sync
     entries:
