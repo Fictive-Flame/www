@@ -37,19 +37,28 @@ equipment:
       - Heil Sound PR-30 large diaphragm dynamic broadcast microphone
       - Rode NTG-2 shotgun microphone
       - Tentacle Sync lavalier microphone (with screw lock)
+      - Sonarworks tuned DSP calibration microphone
   - heading: Live Events and Support
     entries:
       - 25' Rode boom pole
       - Prompter People 13" teleprompter with remote script management software
       - 75' fiber optic HDMI cables (2)
       - Blackmagic Design ATEM 1 M/E Constellation UHD video switcher
-  - heading: Audio Reproduction
+  - heading: Audio Playback and Mixing
     entries:
       - Adam Audio A7V nearfield studio monitor (2)
       - Adam Audio Sub12 12" subwoofer (2)
       - Focusrite Scarlett 18i8 audio interface
       - dbx 266xs Dual Channel Expander/Gate/Compressor
       - Furman and Middle Atlantic power conditioners
+  - heading: Software
+    entries:
+      - Sonarworks SoundID Reference
+      - DaVinci Resolve 20
+      - Final Cut Pro X
+      - Logic Pro 11
+      - Soundtoys plugin collection
+      - Universal Audio compressor plugins
   - heading: Displays and Compute
     entries:
       - Apple Pro Display XDR
