@@ -14,7 +14,7 @@ packages:
   - title: Aerial Imagery
     slug: aerial-imagery
     description: >-
-      The quickest way to establish location is with an aerial shot. Handle it quickly and legally with our photographer flight crew.
+      The quickest way to establish location is with an aerial shot. Handle it quickly and legally with our certified flight crew.
     process: >-
       Filmmaking is an artform, whether on the ground or in the sky. Experience the difference of hiring a skilled videographer who is also Part 107 certified. We ensure each mission is safe, compliant, and that any resulting images or video meet your standard.
     media:
