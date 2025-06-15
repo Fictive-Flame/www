@@ -11,6 +11,15 @@ packages:
       - type: video/mp4
         src: https://storage.fictiveflame.co/on-the-fence-craft-and-process-sample.mp4
 
+  - title: Event Recap
+    slug: event-recap
+    description: >-
+      Transform a one-day experience into a powerful marketing tool: capturing the energy, key moments, and audience reactions to keep the buzz alive long after the event ends.
+    process: >-
+      Whether on the ground or in the air, we'll ensure your event recap video is just as memorable as the event itself. Our team knows how to dance with the party, while ensuring complex airspace operations are performed safely.
+    media:
+      - type: video/mp4
+        src: https://storage.fictiveflame.co/events.mp4
   - title: Aerial Imagery
     slug: aerial-imagery
     description: >-
