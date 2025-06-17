@@ -8,7 +8,8 @@ import Footer from "../../components/Footer.astro";
 
 import { getWork, getWorkCategories, slugify } from "../../utils/data";
 
-const work = await getWork();
+const workEntries = await getWork();
+const work = workEntries.reverse();
 const categories = getWorkCategories(work);
 ---
 
