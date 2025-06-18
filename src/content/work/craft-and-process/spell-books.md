@@ -6,7 +6,6 @@ description: >-
   At 800 square feet, Spell Books is missing much of the usual space of a bookstore. However, for what they lack in area, they make up for in personality.
 categories:
   - Podcast
-  - On Location
 poster: ./spell-books-poster.jpg
 preview:
   - type: video/mp4

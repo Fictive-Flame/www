@@ -5,8 +5,7 @@ description: >-
 type: feature
 pubDate: 2024-02-02
 categories:
-  - Mini Doc
-  - Documentary
+  - Brand Story
 poster: https://storage.fictiveflame.co/earth-at-play-poster.jpg
 preview:
   - type: video/mp4
