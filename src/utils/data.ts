@@ -63,3 +63,6 @@ export function getWorkCategories(work) {
 export async function getWorkSections() {
   return await getCollection("processes");
 }
+
+export const byDate = (a, b) =>
+  new Date(b.data.pubDate) - new Date(a.data.pubDate);

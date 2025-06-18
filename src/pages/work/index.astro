@@ -6,10 +6,9 @@ import Container from "../../components/Container.astro";
 import WorkFeature from "../../components/WorkFeature.astro";
 import Footer from "../../components/Footer.astro";
 
-import { getWork, getWorkCategories, slugify } from "../../utils/data";
+import { getWork, getWorkCategories, slugify, byDate } from "../../utils/data";
 
-const workEntries = await getWork();
-const work = workEntries.reverse();
+const work = (await getWork()).sort(byDate);
 const categories = getWorkCategories(work);
 ---
 
