@@ -1,5 +1,5 @@
 ---
-title: "Spell Books: Craft and Process"
+title: "Craft and Process: an Interview Podcast"
 type: series
 pubDate: 2025-02-01
 description: >-
