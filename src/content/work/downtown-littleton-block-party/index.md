@@ -1,7 +1,7 @@
 ---
 title: Downtown Littleton Block Party
 description: >-
-  Welcoming the Block Party to downtown Littleton after a six year absence was a tall order. Fictive Flame was ready for the challenge, stepping up to document the event with visuals on the ground and in the air.
+  Welcoming the Block Party to Downtown Littleton after a six year absence was a tall order. Fictive Flame was ready for the challenge, stepping up to document the event with visuals on the ground and in the air.
 type: feature
 pubDate: 2025-06-16
 categories:
