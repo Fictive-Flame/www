@@ -3,7 +3,7 @@ title: "Craft and Process: an Interview Podcast"
 type: series
 pubDate: 2025-02-01
 description: >-
-  At 800 square feet, Spell Books is missing much of the usual space of a bookstore. However, for what they lack in area, they make up for in personality.
+  Craft and Process is a traveling interview program, hosted by longtime broadcaster, Nicholas Young. It visits artisans and business owners in their spaces to explore why the work matters and how processes help fuel art.
 categories:
   - Podcast
 poster: ./spell-books-poster.jpg
