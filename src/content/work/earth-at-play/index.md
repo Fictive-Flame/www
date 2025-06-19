@@ -6,7 +6,7 @@ type: feature
 pubDate: 2024-02-02
 categories:
   - Brand Story
-poster: https://storage.fictiveflame.co/earth-at-play-poster.jpg
+poster: ./poster.jpg
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/earth-at-play-sample.mp4
