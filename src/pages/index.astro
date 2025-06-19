@@ -1,9 +1,13 @@
 ---
+import { getImage } from "astro:assets";
+
 import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
 import poster from "../assets/portfolio-poster.jpg";
+
+const resized = await getImage({ src: poster, width: 850, height: 500 });
 ---
 
 <Layout
@@ -68,7 +72,7 @@ import poster from "../assets/portfolio-poster.jpg";
       loop
       muted
       playsinline
-      poster={poster.src}
+      poster={resized.src}
       class="absolute z-10 inset-0 h-full w-full object-cover"
     >
       <source
