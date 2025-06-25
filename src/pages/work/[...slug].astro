@@ -68,7 +68,7 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
       youtubeId ? (
         <media-controller class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1">
           <youtube-video
-            src={`https://www.youtube.com/watch?v=${youtubeId}`}
+            src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
             slot="media"
             class="isolate"
             controls
