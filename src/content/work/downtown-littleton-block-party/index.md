@@ -7,6 +7,7 @@ pubDate: 2025-06-16
 categories:
   - Event Recap
   - Aerial
+youtubeId: 6uIjdE84YiE
 poster: ./poster.jpg
 preview:
   - type: video/mp4

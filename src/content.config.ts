@@ -11,6 +11,7 @@ const work = defineCollection({
       description: z.string(),
       categories: z.array(z.string()),
       poster: image(),
+      youtubeId: z.string().optional(),
       preview: z.array(
         z.object({
           type: z.string(),

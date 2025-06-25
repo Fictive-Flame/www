@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const {
-  data: { title, pubDate, description, poster, media, categories },
+  data: { title, pubDate, description, poster, media, categories, youtubeId },
 } = Astro.props;
 
 const structuredData = {
@@ -64,15 +64,32 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
     </Container>
   </SectionHeader>
   <Container classes={["px-6", "mt-12", "lg:px-0", "text-gray-800"]}>
-    <video
-      controls
-      playsinline
-      poster={resized.src}
-      class="w-full aspect-video"
-    >
-      {media.map((m) => <source src={m.src} type={m.type} />)}
-      Your browser does not support the video tag.
-    </video>
+    {
+      youtubeId ? (
+        <media-controller class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1">
+          <youtube-video
+            src={`https://www.youtube.com/watch?v=${youtubeId}`}
+            slot="media"
+            class="isolate"
+            controls
+            crossorigin
+          />
+          <media-loading-indicator slot="centered-chrome" noautohide />
+        </media-controller>
+      ) : (
+        <video
+          controls
+          playsinline
+          poster={resized.src}
+          class="w-full aspect-video"
+        >
+          {media.map((m) => (
+            <source src={m.src} type={m.type} />
+          ))}
+          Your browser does not support the video tag.
+        </video>
+      )
+    }
     <div class="mt-4 uppercase text-sm">
       <div class="mb-2 dark:text-gray-300"><span>Categories</span></div>
       <ul class="flex overflow-y-scroll dark:text-gray-300">
