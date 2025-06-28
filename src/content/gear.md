@@ -14,8 +14,8 @@ equipment:
       - Tiffen 2-8 82mm ND filter
   - heading: Aircraft
     entries:
-      - DJI Mavic 3 Pro (FAA registered, Part 107 compliant)
-      - Sub-250g custom Cinewhoop with DJI O4 Pro FPV, GPS, and Remote ID (Under Development)
+      - DJI Mavic 3 Pro ("Fictive Air 1")
+      - Custom sub-250g cinewhoop with GoPro 12, DJI O4 Pro FPV ("Fictive Air 2")
       - RadioMaster GX12 Transmitter
   - heading: Recording and Timecode
     entries:
