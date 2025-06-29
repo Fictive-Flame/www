@@ -17,6 +17,7 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
 >
   <Nav />
   <div
+    style={`background-image: url(${resized.src})`}
     class="relative w-full h-dvh min-h-[500px] overflow-hidden aspect-video flex justify-center items-center transition-all"
   >
     <div
