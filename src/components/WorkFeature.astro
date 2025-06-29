@@ -6,7 +6,6 @@ const {
 } = Astro.props;
 
 const resized = await getImage({ src: poster, width: 850, height: 500 });
-const thumb = await getImage({ src: poster, width: 550, height: 200 });
 ---
 
 <div class="overflow-hidden relative h-[500px]">
@@ -21,7 +20,6 @@ const thumb = await getImage({ src: poster, width: 550, height: 200 });
     </div>
   </div>
   <div
-    style={`background-image: url(${thumb.src})`}
     class="absolute w-full h-4/5 bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-950/90"
   >
   </div>
