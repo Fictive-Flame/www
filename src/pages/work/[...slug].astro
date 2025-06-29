@@ -103,7 +103,7 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
             controls
             playsinline
             poster={resized.src}
-            class="w-full aspect-video"
+            class="w-full h-full aspect-video"
           >
             {media.map((m) => (
               <source src={m.src} type={m.type} />
