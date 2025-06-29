@@ -12,6 +12,18 @@ const work = defineCollection({
       categories: z.array(z.string()),
       poster: image(),
       youtubeId: z.string().optional(),
+      team: z.array(
+        z.object({
+          heading: z.string(),
+          credit: z.string(),
+        }),
+      ),
+      links: z.array(
+        z.object({
+          title: z.string(),
+          href: z.string(),
+        }),
+      ),
       preview: z.array(
         z.object({
           type: z.string(),

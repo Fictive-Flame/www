@@ -8,6 +8,12 @@ categories:
   - Podcast
 poster: ./poster.jpg
 youtubeId: c9nY_GdiYJs
+team:
+  - heading: Host, Director, Camera Operator, and Post-Production
+    credit: Nicholas Young
+links:
+  - title: Craft and Process Podcast
+    href: https://secretfader.com/podcasts/craft-and-process
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/craft-and-process-sample.mp4

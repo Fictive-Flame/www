@@ -20,7 +20,17 @@ export async function getStaticPaths() {
 }
 
 const {
-  data: { title, pubDate, description, poster, media, categories, youtubeId },
+  data: {
+    title,
+    pubDate,
+    description,
+    poster,
+    media,
+    categories,
+    youtubeId,
+    team,
+    links,
+  },
 } = Astro.props;
 
 const structuredData = {
@@ -63,49 +73,103 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
       </p>
     </Container>
   </SectionHeader>
-  <Container classes={["px-6", "mt-12", "lg:px-0", "text-gray-800"]}>
-    {
-      youtubeId ? (
-        <media-controller class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1">
-          <youtube-video
-            src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
-            slot="media"
-            class="isolate"
+  <Container
+    classes={[
+      "px-6",
+      "mt-12",
+      "grid",
+      "grid-cols-1",
+      "lg:grid-cols-12",
+      "lg:gap-12",
+      "lg:px-0",
+      "text-gray-800",
+    ]}
+  >
+    <div class="lg:col-span-9">
+      {
+        youtubeId ? (
+          <media-controller class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1">
+            <youtube-video
+              src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
+              slot="media"
+              class="isolate"
+              controls
+              crossorigin
+            />
+            <media-loading-indicator slot="centered-chrome" noautohide />
+          </media-controller>
+        ) : (
+          <video
             controls
-            crossorigin
-          />
-          <media-loading-indicator slot="centered-chrome" noautohide />
-        </media-controller>
-      ) : (
-        <video
-          controls
-          playsinline
-          poster={resized.src}
-          class="w-full aspect-video"
-        >
-          {media.map((m) => (
-            <source src={m.src} type={m.type} />
-          ))}
-          Your browser does not support the video tag.
-        </video>
-      )
-    }
-    <div class="mt-4 uppercase text-sm">
-      <div class="mb-2 dark:text-gray-300"><span>Categories</span></div>
-      <ul class="flex overflow-y-scroll dark:text-gray-300">
-        {
-          categories.map((c) => (
-            <li class="me-4 font-semibold antialiased text-nowrap">
-              <a
-                class="hover:text-gray-400"
-                href={`/work/category/${slugify(c)}`}
-              >
-                {c}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+            playsinline
+            poster={resized.src}
+            class="w-full aspect-video"
+          >
+            {media.map((m) => (
+              <source src={m.src} type={m.type} />
+            ))}
+            Your browser does not support the video tag.
+          </video>
+        )
+      }
+    </div>
+    <div class="text-gray-600 dark:text-gray-300 lg:col-span-3">
+      <div class="mt-4 lg:mt-0 lg:col-span-3 uppercase text-sm">
+        <div class="mb-4">
+          <span class="text-base font-bold underline underline-offset-8"
+            >Team</span
+          >
+        </div>
+        <ul>
+          {
+            team.map((c) => (
+              <li class="mb-4 antialiased">
+                <span class="font-semibold block mb-1">{c.heading}</span>
+                {c.credit}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="mt-6 uppercase text-sm">
+        <div class="mb-4">
+          <span class="text-base font-bold underline underline-offset-8"
+            >Links</span
+          >
+        </div>
+        <ul class="flex flex-col dark:text-gray-300">
+          {
+            links.map((c) => (
+              <li class="mb-1 antialiased">
+                <a href={c.href} target="_blank" rel="noopener">
+                  {c.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="mt-6 uppercase text-sm">
+        <div class="mb-4">
+          <span class="text-base font-bold underline underline-offset-8"
+            >Categories</span
+          >
+        </div>
+        <ul class="flex dark:text-gray-300">
+          {
+            categories.map((c) => (
+              <li class="me-4 antialiased">
+                <a
+                  class="hover:text-gray-400"
+                  href={`/work/category/${slugify(c)}`}
+                >
+                  {c}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   </Container>
   <Footer />

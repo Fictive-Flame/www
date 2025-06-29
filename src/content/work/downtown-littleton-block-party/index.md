@@ -9,6 +9,16 @@ categories:
   - Aerial
 youtubeId: 6uIjdE84YiE
 poster: ./poster.jpg
+team:
+  - heading: Producer
+    credit: Fictive Flame Media
+  - heading: Director, Camera Operator, Pilot
+    credit: Nicholas Young
+links:
+  - title: Downtown Littleton
+    href: https://littletondda.org
+  - title: Littleton Merchants Association
+    href: https://downtownlittleton.org
 preview:
   - type: video/mp4
     src: https://storage.fictiveflame.co/downtown-littleton-block-party/preview.mp4
