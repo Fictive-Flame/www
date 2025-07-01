@@ -1,6 +1,8 @@
 ---
 import { getImage } from "astro:assets";
 import { workUrlFor } from "../utils/data";
+import placeholder from "../assets/poster.svg";
+
 const {
   data: { title, poster, preview },
 } = Astro.props;
@@ -23,6 +25,7 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
     class="absolute w-full h-4/5 bottom-0 z-11 bg-gradient-to-b from-gray-950/0 to-gray-950/90"
   >
   </div>
+  <img src={placeholder.src} class="w-full h-full blur-2xl" />
   <video
     autoplay
     loop
