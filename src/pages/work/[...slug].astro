@@ -88,15 +88,20 @@ const resized = await getImage({ src: poster, width: 850, height: 500 });
     <div class="lg:col-span-9">
       {
         youtubeId ? (
-          <media-controller class="w-full aspect-video mb-4 lg:mb-8 relative isolate z-1">
+          <media-controller class="relative w-full aspect-video mb-4 lg:mb-8">
             <youtube-video
-              src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
               slot="media"
-              class="isolate"
-              controls
-              crossorigin
+              class="absolute w-full h-full aspect-video"
+              src={`https://www.youtube.com/watch?v=${youtubeId}&hd=1`}
             />
-            <media-loading-indicator slot="centered-chrome" noautohide />
+            <media-control-bar class="w-full bottom-0 absolute">
+              <media-play-button class="p-2" />
+              <media-mute-button />
+              <media-volume-range />
+              <media-time-range />
+              <media-pip-button />
+              <media-fullscreen-button />
+            </media-control-bar>
           </media-controller>
         ) : (
           <video
