@@ -17,9 +17,9 @@ equipment:
     entries:
       - DJI Mavic 3 Pro ("Fictive Air 1")
       - Sub-250g 2.5" "Cinemini" FPV with DJI O4 Air Unit Pro ("Fictive Air 2")
-      - Luminier Cinequads QAV Pro Micro 2.5" FPV with DJI O4 Air Unit Pro
-      - RadioMaster GX12 Transmitter (ELRS, Gemini)
+      - Luminier Cinequads QAV Pro Micro 2.5" FPV with DJI O4 Air Unit Pro ("Fictive Air 3")
       - DJI Goggles N3
+      - RadioMaster GX12 Transmitter (ELRS, Gemini)
   - heading: Recording and Timecode
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
