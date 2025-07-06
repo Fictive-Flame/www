@@ -2,10 +2,11 @@
 title: Equipment List
 slug: equipment
 equipment:
-  - heading: Digital Cinema Cameras
+  - heading: Cameras
     entries:
       - Sony FX3
       - Sony FX30
+      - Ultralight-modified GoPro Hero 12 Black
   - heading: Lenses
     entries:
       - Sony 24-70 FF 2.8 GM II
@@ -15,8 +16,10 @@ equipment:
   - heading: Aircraft
     entries:
       - DJI Mavic 3 Pro ("Fictive Air 1")
-      - Custom sub-250g cinewhoop with GoPro 12, DJI O4 Pro FPV ("Fictive Air 2")
-      - RadioMaster GX12 Transmitter
+      - Sub-250g 2.5" "Cinemini" FPV with DJI O4 Air Unit Pro ("Fictive Air 2")
+      - Luminier Cinequads QAV Pro Micro 2.5" FPV with DJI O4 Air Unit Pro
+      - RadioMaster GX12 Transmitter (ELRS, Gemini)
+      - DJI Goggles N3
   - heading: Recording and Timecode
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
