@@ -24,7 +24,7 @@ Online, FPV flying has become it's own cinematic genre: diving waterfalls, racin
 
 Holding it in your hand is seemingly a paradox: how can it capture buttery smooth, 10-bit footage at up to 120 frames per second, with the takeoff weight of a typical remote control?
 
-The answer lies in it's lineage. Cinewhoops borrow inspiration from even smaller racing drones, which adopted propeller guards to help navigate tight, obstacle-filled environments and continue flying. We scaled those components up slightly, using 2.5" propellers and matching guards, to boost stability, outdoor wind resistance, and improved throttle response. This helps pilots get out of sticky situations quickly and safely.
+The answer lies in it's lineage. Cinewhoops borrow inspiration from even smaller racing drones, which adopted propeller guards to help navigate tight, obstacle-filled environments and continue flying. We scaled those components up slightly, using 2.5" propellers and matching guards, to boost stability, outdoor wind resistance, and improve throttle response. This helps pilots get out of sticky situations quickly and safely.
 
 ## A New Standard
 
