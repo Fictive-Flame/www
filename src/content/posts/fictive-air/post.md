@@ -44,6 +44,7 @@ Depending on the scenario, our team configures the software to maximize safety f
 
 # Looking Up
 
-The footage from Fictive Air 2 has already made it's way into event recaps and property tours produced by our team. As the summer heats up, we expect the schedule for these small aircraft to do the same.
+Fictive Air is already making its mark. You can spot footage from these small aircraft in our [recent event recaps](/work/littleton-business-chamber-after-hours-redstone-bank/) and property tours, and demand is growing. As summer heats up, so does demand for our sub250g aerial fleet.
+
 
 Get in touch below, and ask about bringing Fictive Air to your next event.
