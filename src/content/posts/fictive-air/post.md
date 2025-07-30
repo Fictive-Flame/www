@@ -8,42 +8,46 @@ headerImage: ./header.jpg
 headerAlt: Fictive Air 2, ready to fly in a sub250g configuration.
 headerCredit: Nicholas Young, Fictive Flame
 ---
-At Fictive Flame, storytelling is at the heart everything we do. After all, a good story is often an inspiration, offering a reason to try a new restaurant, go on an adventure, or learn a new skill.
+At Fictive Flame, storytelling is at the heart of everything we do. Whether it's inspiring someone to try a new restaurant, chase an adventure, or learn a new skill, a great story always sparks curiousity and connection.
 
-During the last year, our mission to tell more engaging stories has led us to the skies. Our Founder and Creative Director, Nicholas, is an FAA certified Part 107 pilot, which makes our flights safe, and compliant. This isn’t performance, either. Companies operating without a Part 107 certified pilot can incur huge penalties, often per violation. It also means we can operate in airspace that is off limits to recreational pilots, too.
+Over the past year, our mission to share engaging narratives has taken us to new heights. In early June, when our Founder and Creative Director, Nicholas, became an FAA certified Part 107 pilot, a whole host of creative opportunities suddenly becamse available. That certifiation isn't just a badge of professionalism, it's a legal necessity. Operating drones without it can lead to [hefty fines for both the pilot and clients](https://pilotinstitute.com/risk-of-unlicensed-drone-flying/).
 
-Today, we’re entering a new chapter of professional aerial imaging, as we move from being a certified and insured drone operator, to a builder of custom aircraft. Introducing Fictive Air, an American-made, Category 1 multirotor drone, designed for high-end cinematic flying in close proximity to people and vehicles. It’s built for advanced pilots, tuned for precision, and compliant at liftoff.
+We're proud of the operations record for our current aircraft, but safety concerns and the need to remain compliant ground many creative opportunities. Today, we're turning the page on an exciting new chapter. We've evolved from flying drones to building them.
 
-# Why We Built It
+Introducing Fictive Air, our own American-made, Category 1 multirotor aircraft, purpose-built for cinematic flying in tight, dynamic environments. It's designed by and for professional pilots, tuned to precision, and engineered to be compliant at liftoff.
 
-FPV, or “First Person View” drones set the standard for immersive, cinematic shots. It’s an experience like no other, allowing a skilled pilot to fly around obstacles and through tiny gaps with precision since you’re able to see the same view as the drone, in real time.
+## Why We Built It
 
-This type of flying has captured the collective imagination of online communities, as increasingly powerful rigs dive waterfalls, speed through abandoned buildings, and up mountainsides. Lately, I’ve seen more of these up-close style flights in extremely tight spaces, sometimes even inches from the subject, thanks to a new type of build: the cinewhoop.
+FPV&mdash;short for "First Person View"&mdash;drones have redefined the boundaries of action cinematography. They offer an immersive experience by allowing pilots and the audience to see the drone's view, in real time. This allows for incredible precision, weaving though obstacles and capturing unique, fluid footage.
 
-Holding it in your hand is seemingly a paradox: how can something capture buttery smooth, 10-bit footage at up to 120 frames per second, with the takeoff weight of a typical remote control?
+Online, FPV flying has become it's own cinematic genre: diving waterfalls, racing through abandoned structures, and soaring up cliff faces. Recently, that same style has evolved into something even more intimate: angles that place the camera mere feet, or inches, from people, cars, and other moving subjects. This new format of flying is powered by a drone known as a Cinewhoop.
 
-To find the answer, we have to look even closer. Cinewhoops inherit the DNA of even smaller acrobatic racing drones which adopted propeller guards as a protective feature when flying indoors and around difficult courses. In this case, we sized up the propellers and matching guards to 2.5", allowing for better wind resistance and extra power headroom that allows a pilot to exit sticky situations quickly and safely.
+Holding it in your hand is seemingly a paradox: how can it capture buttery smooth, 10-bit footage at up to 120 frames per second, with the takeoff weight of a typical remote control?
 
-We already had a traditional camera drone, a Mavic 3 Pro, in our fleet. At the time of this post, there isn’t an ASTM approved parachute available for our model. What you might see online either isn’t FAA approved, or is for the Mavic 3 Enterprise, neither of which were options for us.
+The answer lies in it's lineage. Cinewhoops borrow inspiration from even smaller racing drones, which adopted propeller guards to help navigate tight, obstacle-filled environments and continue flying. We scaled those components up slightly, using 2.5" propellers and matching guards, to boost stability, outdoor wind resistance, and safety.
 
-The team needed something different, a drone that was under the weight limits, Remote ID compliant, capable of returning home under guidance of a GPS and compass when flown outdoors, safe to operate over crowds, and close to moving vehicles. The one problem? Meeting all those requirements would require modifications to any off-the-shelf unit.
+## A New Standard
+
+Our existing drone fleet already included a Mavic 3 Pro, but it couldn't meet all the requirements we had for events work. At the time of this post, there isn't an ASTM approved parachute available for our model. What you might see online either isn't FAA approved, or for a slightly different model.
+
+So, we set out to build something better. We needed a drone that was under the weight limits so it didn't require a Part 107 waiver, was Remote ID compliant, capable of returning home under guidance of GPS when flown outdoors, and safe to operate over crowds of spectators. The one problem? Off the shelf drones all fell short. They either needed an improved propeller guard or required components to be switched out for FAA-compliant professional work.
 
 When the order for our pre-built cinewhoop stalled for almost a month, we decided to build rather than compromise. The results aren’t just a drone, but a creative tool designed from the ground up to capture and share immersive stories.
 
-# Designed for Safety and Performance
+## Designed for Safety and Performance
 
-Meeting the goal of Category 1 compliance while still achieving cinematic standards, both indoors and out, was the hard part. Every component, screw, connector, and inch of wire had to be scrutinized for weight. The final build weighs in at 246 grams, and has a flight time of up to 6 minutes under ideal conditions. It's also safer than any out of the box system, too, thanks to our software calibration.
+Engineering a drone that balances FAA Category 1 compliance with cinematic performance was no small feat. Every screw, connector, and wire was carefully selected to remain under the weight limit.
 
-If, at any time, the aircraft loses radio link, it will perform two operations, beginning by hovering in place and waiting for up to 5 seconds for the link to return. If that fails to happen, it will either land, or return home to the last known coordinates where it launched from.
+Weighing in at just over 240 grams, both Fictive Air 2 and 3 are able to deliver up to 6 minutes of total flight time, and includes safety features that are often only available on larger aerial systems.
 
-When flying indoors and over complex landscapes, the drone will attempt to recover and continue flying if it bumps an obstacle. However, when flying near people or vehicles, a crash will cause the aircraft to disarm, immediately stopping the propellers.
+For instance, if the aircraft loses radio contact, it performs a two-step safety routine: hovering in place for up to 5 seconds for the link to be resolved, before landing safely or returning to the launch point, depending on the flight environment.
 
-In either event, video recording is preserved (both on the drone and in the pilot's goggles) so the whole event can be replayed for further study.
+When flying indoors, it's calibrated to recover and keep flying after light bumps. However, in scenarios involving people or moving vehicles, even the lightest tap triggers an automatic shutdown, instantly stopping the propellers to prevent injury or damage. Video is constantly being recorded, not only to the drone itself, but to the pilot's goggles, so every moment is preserved as an opportunity for refinement.
 
-Depending on the scenario, our team configures the software to maximize safety for each flight.
+We custom-configure the flight software bfore each mission to match the demands and safety profile of the job.
 
-# Looking Up
+## Looking Up
 
-The footage from Fictive Air 2 has already made it's way into event recaps and property tours produced by our team. As the summer heats up, we expect the schedule for these small aircraft to do the same.
+Fictive Air is already making its mark. You can spot footage from these small aircraft in our recent event recaps and property tours, and demand is growing. As summer heats up, so does demand for our sub250g aerial fleet.
 
-Get in touch below, and ask about bringing Fictive Air to your next event.
+If your next event, brand shoot, or production needs next-level visuals, reach out. Let's take flight, together.
