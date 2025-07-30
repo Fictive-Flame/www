@@ -28,7 +28,7 @@ The answer lies in it's lineage. Cinewhoops borrow inspiration from even smaller
 
 ## A New Standard
 
-Our existing drone fleet already included a Mavic 3 Pro, but it couldn't meet all the requirements we had for events work. At the time of this post, there isn't an ASTM approved parachute available for our model. What you might see online either isn't FAA approved, or misses our own stringent requirements.
+Our existing drone fleet already included a Mavic 3 Pro, but it couldn't meet all the requirements we had for events work. At the time of this post, there isn't an ASTM parachute available for our model. What you might see online either isn't FAA approved, or misses our own stringent requirements.
 
 So, we set out to build something better: a drone that was under the weight limits so it didn't require a Part 107 waiver, fully Remote ID compliant, capable of returning home under guidance of GPS when flown outdoors, and safe to operate over crowds of spectators. The one problem? Off the shelf drones all fell short. They either needed an improved propeller guard or required components to be switched out for FAA-compliant professional work.
 
