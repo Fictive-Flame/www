@@ -52,8 +52,8 @@ const posts = defineCollection({
       pubDate: z.date(),
       slug: z.string().optional(),
       headerImage: image(),
-      headerLink: z.string(),
-      headerCredit: z.string(),
+      headerLink: z.string().optional(),
+      headerCredit: z.string().optional(),
       headerAlt: z.string(),
     }),
 });
