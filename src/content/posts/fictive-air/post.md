@@ -42,9 +42,9 @@ Weighing in at just over 240 grams, both Fictive Air 2 and 3 are able to deliver
 
 For instance, if the aircraft loses radio contact, it performs a two-step safety routine: hovering in place for up to 5 seconds for the link to be resolved, before landing safely or returning to the launch point, depending on the flight environment.
 
-When flying indoors, it's calibrated to recover and keep flying after light bumps. However, in scenarios involving people or moving vehicles, even the lightest tap triggers an automatic shutdown, instantly stopping the propellers to prevent injury or damage. Video is constantly being recorded, not only to the drone itself, but to the pilot's goggles, so every moment is preserved as an opportunity for refinement.
+We custom-configure the flight software before each mission to match the demands and safety profile of the job.
 
-We custom-configure the flight software bfore each mission to match the demands and safety profile of the job.
+When flying indoors, it's calibrated to recover and keep flying after light bumps. However, in scenarios involving people or moving vehicles, even the lightest tap triggers an automatic shutdown, instantly stopping the propellers to prevent injury or damage. Video is constantly being recorded, not only to the drone itself, but to the pilot's goggles, so every moment is preserved as an opportunity for refinement.
 
 ## Looking Up
 
