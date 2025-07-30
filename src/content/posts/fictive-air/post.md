@@ -10,7 +10,7 @@ headerCredit: Nicholas Young, Fictive Flame
 ---
 At Fictive Flame, storytelling is at the heart of everything we do. Whether it's inspiring someone to try a new restaurant, chase an adventure, or learn a new skill, a great story always sparks curiousity and connection.
 
-Over the past year, our mission to share engaging narratives has taken us to new heights. In early June, when our Founder and Creative Director, Nicholas, became an FAA certified Part 107 pilot, a whole host of creative opportunities suddenly opened up. That certification isn't just a badge of professionalism, it's a legal necessity. Operating drones without it can lead to [hefty fines for both the pilot and clients](https://pilotinstitute.com/risk-of-unlicensed-drone-flying/).
+Over the past year, our mission to share engaging narratives has taken us to new heights. In early June, when our Founder and Creative Director, Nicholas, became an FAA certified Part 107 pilot, many creative opportunities were suddenly revealed. That certification isn't just a badge of professionalism, it's a legal necessity. Operating drones without it can lead to [hefty fines for both the pilot and clients](https://pilotinstitute.com/risk-of-unlicensed-drone-flying/).
 
 We're proud of the operations record for our current aircraft, but safety concerns and the need to remain compliant ground many creative opportunities. Today, we're turning the page on an exciting new chapter. We've evolved from flying drones to building them.
 
