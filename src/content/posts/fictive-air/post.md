@@ -10,7 +10,7 @@ headerCredit: Nicholas Young, Fictive Flame
 ---
 At Fictive Flame, storytelling is at the heart everything we do. After all, a good story is often an inspiration, offering a reason to try a new restaurant, go on an adventure, or learn a new skill.
 
-During the last year, our mission to tell more engaging stories has led us to the skies. Our Founder and Creative Director, Nicholas, is a FAA certified Part 107 pilot, which makes our flights safe, and compliant. This isn’t performance, either. Companies operating without a Part 107 certified pilot can incur huge penalties, often per violation. It also means we can operate in airspace that is off limits to recreational pilots, too.
+During the last year, our mission to tell more engaging stories has led us to the skies. Our Founder and Creative Director, Nicholas, is an FAA certified Part 107 pilot, which makes our flights safe, and compliant. This isn’t performance, either. Companies operating without a Part 107 certified pilot can incur huge penalties, often per violation. It also means we can operate in airspace that is off limits to recreational pilots, too.
 
 Today, we’re entering a new chapter of professional aerial imaging, as we move from being a certified and insured drone operator, to a builder of custom aircraft. Introducing Fictive Air, an American-made, Category 1 multirotor drone, designed for high-end cinematic flying in close proximity to people and vehicles. It’s built for advanced pilots, tuned for precision, and compliant at liftoff.
 
