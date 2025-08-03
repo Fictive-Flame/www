@@ -17,7 +17,7 @@ team:
   - heading: Visual Observers
     credit: Susan Young, Sloan Young
   - heading: Special Thanks
-    credit: Spell Books
+    credit: Spell Books, BCC Live
 links:
   - title: Littleton Twilight Criterium
     href: https://littletoncrit.com
