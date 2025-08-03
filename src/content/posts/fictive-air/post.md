@@ -48,6 +48,6 @@ When flying indoors, it's calibrated to recover and keep flying after light bump
 
 ## Looking Up
 
-Fictive Air is already making its mark. You can spot footage from these small aircraft in our [recent event recaps](/work/littleton-business-chamber-after-hours-redstone-bank/) and property tours, and demand is growing. As summer heats up, so does demand for our sub250g aerial fleet.
+Fictive Air is already making its mark. You can spot footage from these small aircraft in our [recent event recaps](/work/category/event-recap/).
 
 If your next event, brand shoot, or production needs next-level visuals, reach out. Let's take flight, together.

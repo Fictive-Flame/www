@@ -84,7 +84,7 @@ const { title, href } = Astro.props;
       </ul>
     </Container>
     {
-      work.map((w) => (
+      work.reverse().map((w) => (
         <div class="col-span-12 lg:col-span-6">
           <WorkFeature {...w} />
         </div>
