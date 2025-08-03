@@ -1,7 +1,7 @@
 ---
 title: 2025 Littleton Twilight Criterium
 description: >-
-  Presented every year by the City of Littleton, the Twilight Criterium is a chance to show your mettle amongst other top-rated cyclists from around the world. Here at Fictive Flame, we know there's no better way to watch sports than by drone, so we assembled the team, made a flight plan, secured the city permit, and nailed it with our custom, sub250g Fictive Air series of aerial drones.
+  Presented every year by the City of Littleton, the Twilight Criterium is a chance to show your mettle amongst other top-rated cyclists from around the world. This year, we had a new tool in our kit: Fictive Air, the series of sub250g, prop-guarded aerial drones.
 type: feature
 pubDate: 2025-08-03
 categories:
