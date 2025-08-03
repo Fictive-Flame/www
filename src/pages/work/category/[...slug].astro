@@ -11,6 +11,7 @@ import {
   getWorkByCategory,
   getWorkCategories,
   slugify,
+  byDate,
 } from "../../../utils/data";
 
 export const prerender = true;
@@ -26,7 +27,7 @@ export async function getStaticPaths() {
     .flat();
 }
 
-const work = await getWorkByCategory(Astro.props.title);
+const work = (await getWorkByCategory(Astro.props.title)).sort(byDate);
 const categories = getWorkCategories(await getWork()).filter(
   (c) => c !== Astro.props.title,
 );
@@ -84,7 +85,7 @@ const { title, href } = Astro.props;
       </ul>
     </Container>
     {
-      work.reverse().map((w) => (
+      work.map((w) => (
         <div class="col-span-12 lg:col-span-6">
           <WorkFeature {...w} />
         </div>
