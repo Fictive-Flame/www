@@ -1,7 +1,7 @@
 ---
 title: Columbine Library FPV Drone Tour
 description: >-
-  In this unique look at the iconic Columbine Library, the Fictive Air flight crew starts at the entrance and gracefully soars through the Children's section, into Holds, acrosss the Teen Area, past large observation windows, and into the meeting rooms before returning to the main desk.
+  In this unique look at the iconic Columbine Library, the Fictive Air flight crew make their way though the smallest door, into holds, across the teen area, past large observation windows, and into the meeting rooms before returning to the main desk.
 type: feature
 pubDate: 2025-08-07
 categories:
