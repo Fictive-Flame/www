@@ -15,11 +15,11 @@ equipment:
       - Tiffen 2-8 82mm ND filter
   - heading: Aircraft
     entries:
-      - DJI Mavic 3 Pro ("Fictive Air 1")
-      - Sub-250g 2.5" "Cinemini" FPV with DJI O4 Air Unit Pro ("Fictive Air 2")
-      - Luminier Cinequads QAV Pro Micro 2.5" FPV with DJI O4 Air Unit Pro ("Fictive Air 3")
+      - DJI Mavic 3 Pro ("Blaze")
+      - 65mm Cinewhoop with DJI O4 Air Unit Pro ("Flare", and "Cinder")
+      - 45mm Tinywhoop with DJI O4
       - DJI Goggles N3
-      - RadioMaster GX12 Transmitter (ELRS, Gemini)
+      - RadioMaster GX12 Transmitter (ExpressLRS, Gemini Xrossband, 1W)
   - heading: Recording and Timecode
     entries:
       - Atomos Ninja V+ Ultra ProRes RAW-capable monitor and recorder, with cage (2)
