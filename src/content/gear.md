@@ -18,6 +18,7 @@ equipment:
       - DJI Mavic 3 Pro ("Blaze")
       - 65mm Cinewhoop with DJI O4 Air Unit Pro ("Flare", and "Cinder")
       - 45mm Tinywhoop with DJI O4 ("Spark")
+      # Pyre, Torch, Ignis, Flash, Scorch, Blitz, Aurora, Solaris, Ashfall
       - DJI Goggles N3
       - RadioMaster GX12 Transmitter (ExpressLRS, Gemini Xrossband, 1W)
   - heading: Recording and Timecode
