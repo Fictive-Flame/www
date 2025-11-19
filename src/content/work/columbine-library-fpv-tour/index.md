@@ -5,7 +5,7 @@ description: >-
 type: feature
 pubDate: 2025-08-07
 categories:
-  - Fly-through Tour
+  - FPV Drone Tour
 youtubeId: 2yhZLp_9k08
 poster: ./poster.jpg
 team:

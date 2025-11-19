@@ -7,6 +7,7 @@ pubDate: 2025-07-10
 categories:
   - Event Recap
   - Aerial
+  - FPV
 youtubeId: iHznjks6LR0
 poster: ./poster.jpg
 team:
